@@ -1,0 +1,2 @@
+DEFINE project_lib /filespace/people/a/alangenf/ece555/project_lib
+ASSIGN project_lib libMode shared

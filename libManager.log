@@ -1,0 +1,42 @@
+\o Program:		@(#)$CDS: libManagerOA.exe version 6.1.1 01/10/2007 08:46 (cat61lnx) $
+\o Sub version:		sub-version 06.03-p001
+\o Arguments:		-mpssession virtuoso23188 -mpshost tux-50 
+\o Working Directory:	tux-50:/filespace/people/a/alangenf/ece555
+\o Qt version: 		4.1.4
+\o Log file is "/filespace/people/a/alangenf/ece555/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 25 1272 948))
+\o changeWorkingDir("/filespace/people/a/alangenf/ece555")
+\o MPS request: update library list
+\o ddSetForcedLib("")
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a cdsLibManager->libListBox->value = "project_lib"
+\a cdsLibManager->libListBox->value = "project_lib"
+\a nrListItemAction(cdsLibManager->libListBox 17 0)
+\a cdsLibManager->libLineEdit->value = "project_lib"
+\a cdsLibManager->cellListBox->value = "dff"
+\a cdsLibManager->cellListBox->value = "full_add"
+\a cdsLibManager->cellListBox->value = "dff"
+\a cdsLibManager->cellLineEdit->value = "dff"
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "project_lib"
+\a cdsLibManager->libListBox->value = "project_lib"
+\a cdsLibManager->cellListBox->value = "dff"
+\a cdsLibManager->cellLineEdit->value = "dff"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\o libManager is exiting.
+\a exit(0)
