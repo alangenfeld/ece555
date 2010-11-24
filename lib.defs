@@ -1,2 +1,6 @@
 DEFINE project_lib /filespace/people/a/alangenf/ece555/project_lib
 ASSIGN project_lib libMode shared
+DEFINE ece555_final_project /filespace/people/j/jnystrom/ece555/ece555_final_project
+ASSIGN ece555_final_project libMode shared
+DEFINE ece555_final /filespace/people/j/jnystrom/ece555/ece555_final
+ASSIGN ece555_final libMode shared
