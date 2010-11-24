@@ -33,3 +33,12 @@ IS THIS A GOOD PLAN
    nvidia. They do roughly this, with architects doing verilog from top to bottom and layout
    doing what they can before they get a final netlist.
    	 arch -> netlist -> masks
+
+
+
+11/23/10 ~James
+Got a lot of the schematiccs done minus size then correctly (I quite sure how to do that???)
+pp_gen, dff_en, reg_file_bit_slice, bit_slice(minus the shifter)
+
+We have some design decision like where reg_EnA_n should come from??
+
