@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      alangenf
+HostName                       tux-52.cae.wisc.edu
+ProcessIdentifier              29374
+ProcessCreationTime_UTC        1291071564
+ProcessCreationTime_Readable   Mon Nov 29 16:59:24 2010 CST
+AppIdentifier                  /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/libManagerOA.exe
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /filespace/people/a/alangenf/ece555/libManager.log
+TimeEditLocked                 Mon Nov 29 16:59:24 2010 CST
