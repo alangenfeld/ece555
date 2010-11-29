@@ -32,24 +32,15 @@ module golden0(input clk, rst, start,
 
    // register write
    always @ (posedge clk) begin
-      /* I dont think we need to reset registers   
-       if (rst == 1) begin
-	 reg1 <= 32'h0000_0000;
-	 reg2 <= 32'h0000_0000;
-	 reg3 <= 32'h0000_0000;
-	 reg4 <= 32'h0000_0000;
-	 reg5 <= 32'h0000_0001;
-      end
-       */
-      if (wr_en[0])
+      if (wr_en[0] == 1)
 	reg1 <= Z;
-      if (wr_en[1])
+      if (wr_en[1] == 1)
 	reg2 <= Z;
-      if (wr_en[2])
+      if (wr_en[2] == 1)
 	reg3 <= Z;
-      if (wr_en[3])
+      if (wr_en[3] == 1)
 	reg4 <= Z;
-      if (wr_en[4])
+      if (wr_en[4] == 1)
 	reg5 <= Z;
    end // always @ (posedge clk)
 
@@ -62,7 +53,7 @@ module golden0(input clk, rst, start,
        5'b01000: A = reg4;
        5'b10000: A = reg5;
        default:
-	 ERROR = 1;
+	 A = 32'hZZZZ_ZZZZ;
      endcase
 
    always @*
@@ -73,7 +64,7 @@ module golden0(input clk, rst, start,
        5'b01000: B = reg4;
        5'b10000: B = reg5;
        default:
-	 ERROR = 1;
+	 B = 32'hZZZZ_ZZZZ;
      endcase
 	
 ////////////////////////////////////////////////////////////////////////////////   
@@ -84,7 +75,7 @@ module golden0(input clk, rst, start,
 ////////////////////////////////////////////////////////////////////////////////   
 // Shifter
 ////////////////////////////////////////////////////////////////////////////////
-   assign shifter_out = (left_right == 1) ? A[31:0] << B[4:0] : A[31:0] >> B[4:0];
+   assign shifter_out = (left_right == 0) ? A[31:0] << B[4:0] : A[31:0] >> B[4:0];
    
 ////////////////////////////////////////////////////////////////////////////////   
 // Partial Product Generator
@@ -110,9 +101,10 @@ module golden0(input clk, rst, start,
 ////////////////////////////////////////////////////////////////////////////////   
 // FSM "The Boss"
 ////////////////////////////////////////////////////////////////////////////////
-   fsm theBoss(.clk(clk), .rst(rst), // in  
+   fsm theBoss(.clk(clk), .rst(rst), .start(start), // in  
 	       .rd_enA(rd_enA), .rd_enB(rd_enB), .wr_en(wr_en), .done(done), // out
-	       .shift_en(shift_en), .ppgen_en(ppgen_en), .add_en(add_en));
+	       .shift_en(shift_en), .ppgen_en(ppgen_en), .add_en(add_en), //out
+	       .left_right(left_right)); //in
 
 endmodule // golden0
 

@@ -1,14 +1,19 @@
 module t_fsm();
-   reg clk, rst, rd_enA, rd_enB, wr_en;
-   wire done, err;
+   reg clk, rst, start;
+   
+   wire [4:0] rd_enA, rd_enB, wr_en;
+   wire       done, err, add_en, ppgen_en, shift_en, left_right;
+   
    
    
    fsm DUT(.clk(clk), .rst(rst), .rd_enA(rd_enA), .rd_enB(rd_enB), .wr_en(wr_en), 
-	   .done(done), .ERROR(err), .start(start));
+	   .add_en(add_en), .shift_en(shift_en), .ppgen_en(ppgen_en),
+	   .done(done), .start(start), .left_right(left_right));
 
-
-   always @(clk) 
-     #10 clk = ~clk;
+   initial begin
+   clk = 0;
+    forever #5 clk = ~clk;
+end
 
    always @(err)
      if(err == 1) begin
@@ -17,9 +22,11 @@ module t_fsm();
      end
    
    initial begin
-      clk = 0;
       rst = 1;
       #5 rst = 0;
+      #6 start = 1;
+      #1200;
+      $stop;
    end
 
 
