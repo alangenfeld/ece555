@@ -2,3 +2,4 @@
 .cadence
 transcript
 verilog/transcript
+*.run*

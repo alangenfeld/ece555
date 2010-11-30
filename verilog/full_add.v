@@ -1,48 +1,47 @@
-// Library - ECE555, Cell - full_add, View - schematic
-// LAST TIME SAVED: Oct  5 01:35:26 2010
-// NETLIST TIME: Oct  5 16:30:02 2010
+// Library - ece555_final, Cell - full_add, View - schematic
+// LAST TIME SAVED: Nov 23 20:34:40 2010
+// NETLIST TIME: Nov 29 22:55:04 2010
 `timescale 1ns / 1ns 
 
 module full_add ( Cout, Sum, A, B, Cin );
-
 output  Cout, Sum;
 
 input  A, B, Cin;
 
 
 specify 
-    specparam CDS_LIBNAME  = "ECE555";
+    specparam CDS_LIBNAME  = "ece555_final";
     specparam CDS_CELLNAME = "full_add";
     specparam CDS_VIEWNAME = "schematic";
 endspecify
 
-pmos4 P16 ( 1, Sum, net093, 1);
-pmos4 P15 ( 1, Cout, net080, 1);
-pmos4 P14 ( 1, net093, net080, net049);
-pmos4 P12 ( 1, net093, Cin, net064);
-pmos4 P11 ( 1, net064, A, net068);
-pmos4 P10 ( 1, net068, B, 1);
-pmos4 P9 ( 1, net049, B, 1);
-pmos4 P8 ( 1, net049, Cin, 1);
-pmos4 P7 ( 1, net049, A, 1);
-pmos4 P5 ( 1, net080, A, net097);
-pmos4 P3 ( 1, net13, A, 1);
-pmos4 P2 ( 1, net080, Cin, net13);
-pmos4 P1 ( 1, net097, B, 1);
-pmos4 P0 ( 1, net13, B, 1);
-nmos4 N14 ( 0, Sum, net093, 0);
-nmos4 N13 ( 0, Cout, net080, 0);
-nmos4 N12 ( 0, net088, B, 0);
-nmos4 N11 ( 0, net092, A, net088);
-nmos4 N10 ( 0, net093, Cin, net092);
-nmos4 N9 ( 0, net093, net080, net0105);
-nmos4 N8 ( 0, net0105, Cin, 0);
-nmos4 N7 ( 0, net0105, B, 0);
-nmos4 N6 ( 0, net0105, A, 0);
-nmos4 N5 ( 0, net080, A, net25);
-nmos4 N4 ( 0, net080, Cin, net29);
-nmos4 N2 ( 0, net25, B, 0);
-nmos4 N1 ( 0, net29, B, 0);
-nmos4 N0 ( 0, net29, A, 0);
+pmos P16 ( Sum, 1, net093);
+pmos P15 ( Cout, 1, net080);
+pmos P14 ( net093, net049, net080);
+pmos P12 ( net093, net064, Cin);
+pmos P11 ( net064, net068, A);
+pmos P10 ( net068, 1, B);
+pmos P9 ( net049, 1, B);
+pmos P8 ( net049, 1, Cin);
+pmos P7 ( net049, 1, A);
+pmos P5 ( net080, net097, A);
+pmos P3 ( net13, 1, A);
+pmos P2 ( net080, net13, Cin);
+pmos P1 ( net097, 1, B);
+pmos P0 ( net13, 1, B);
+nmos N14 ( Sum, 0, net093);
+nmos N13 ( Cout, 0, net080);
+nmos N12 ( net088, 0, B);
+nmos N11 ( net092, net088, A);
+nmos N10 ( net093, net092, Cin);
+nmos N9 ( net093, net0105, net080);
+nmos N8 ( net0105, 0, Cin);
+nmos N7 ( net0105, 0, B);
+nmos N6 ( net0105, 0, A);
+nmos N5 ( net080, net25, A);
+nmos N4 ( net080, net29, Cin);
+nmos N2 ( net25, 0, B);
+nmos N1 ( net29, 0, B);
+nmos N0 ( net29, 0, A);
 
 endmodule

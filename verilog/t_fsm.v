@@ -1,3 +1,5 @@
+`timescale 1ns / 1ns 
+
 module t_fsm();
    reg clk, rst, start;
    
@@ -6,7 +8,7 @@ module t_fsm();
    
    
    
-   fsm DUT(.clk(clk), .rst(rst), .rd_enA(rd_enA), .rd_enB(rd_enB), .wr_en(wr_en), 
+   x_fsm DUT(.clk(clk), .rst(rst), .rd_enA(rd_enA), .rd_enB(rd_enB), .wr_en(wr_en), 
 	   .add_en(add_en), .shift_en(shift_en), .ppgen_en(ppgen_en),
 	   .done(done), .start(start), .left_right(left_right));
 
@@ -23,7 +25,7 @@ end
    
    initial begin
       rst = 1;
-      #5 rst = 0;
+      #20 rst = 0;
       #6 start = 1;
       #1200;
       $stop;
