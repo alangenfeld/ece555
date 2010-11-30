@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManagerOA.exe version 6.1.1 01/10/2007 08:46 (cat61lnx) $
 \o Sub version:		sub-version 06.03-p001
-\o Arguments:		-mpssession virtuoso1218 -mpshost tux-52 
+\o Arguments:		-mpssession virtuoso3491 -mpshost tux-52 
 \o Working Directory:	tux-52:/filespace/people/a/alangenf/ece555
 \o Qt version: 		4.1.4
 \o Log file is "/filespace/people/a/alangenf/ece555/libManager.log".
@@ -8,7 +8,6 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
 \w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
-\a nrResizeWindow(cdsLibManager list(39 61 1272 948))
 \o changeWorkingDir("/filespace/people/a/alangenf/ece555")
 \o MPS request: update library list
 \w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
@@ -20,14 +19,15 @@
 \w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
 \w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
 \o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(43 61 1600 1125))
 \a cdsLibManager->libListBox->value = "ece555_final"
 \a cdsLibManager->libListBox->value = "ece555_final"
 \a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "nor"
+\a cdsLibManager->cellListBox->value = "fsm"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrListItemAction(cdsLibManager->cellListBox 8 0)
-\a cdsLibManager->cellLineEdit->value = "nor"
+\a nrListItemAction(cdsLibManager->cellListBox 5 0)
+\a cdsLibManager->cellLineEdit->value = "fsm"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
@@ -40,88 +40,28 @@
 \w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
 \a cdsLibManager->libLineEdit->value = "ece555_final"
 \a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "nor"
-\a cdsLibManager->cellLineEdit->value = "nor"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "or"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a nrListItemAction(cdsLibManager->cellListBox 9 0)
-\a cdsLibManager->cellListBox->value = "or"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "or"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "fsm"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrListItemAction(cdsLibManager->cellListBox 5 0)
 \a cdsLibManager->cellLineEdit->value = "fsm"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = "and"
-\a cdsLibManager->cellLineEdit->value = "and"
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "inv"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrListItemAction(cdsLibManager->cellListBox 7 0)
-\a cdsLibManager->cellLineEdit->value = "inv"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = "inv"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "inv"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \o libManager is exiting.
