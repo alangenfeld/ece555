@@ -24,6 +24,7 @@ end
      end
    
    initial begin
+      start = 0;
       rst = 1;
       #20 rst = 0;
       #6 start = 1;
