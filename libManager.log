@@ -362,3 +362,221 @@
 \a nrListItemAction(cdsLibManager->viewListBox 0 0)
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->cellListBox 7 0)
+\a cdsLibManager->cellLineEdit->value = "fsm"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dff_en2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "2_1_mux"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->cellLineEdit->value = "2_1_mux"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dff_en2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "dff_en2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "dff_en2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a lmgrLogShowPopup("mainListPopup1" 22 95 2 "dff_en")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "dff_en"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "dff_en"
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(465 409 343 180))
+\a basicRenameForm->basicRenameToEdit->value = "dff_mux"
+\a nrDialogAccept(basicRenameForm)
+\a basicRenameForm->OK->value = t
+\o Renaming Cell "dff_en" to "dff_mux" in library "ece555_final".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "dff_mux"
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(481 381 310 236))
+\a nrSetWindowVisibility(workingDialogForm "hide")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\o MPS request: update library list
+\w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
+\w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a nrSetWindowVisibility(basicRenameForm "hide")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dff_en2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a lmgrLogShowPopup("mainListPopup1" 33 93 2 "dff_en2")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "dff_en2"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "dff_en2"
+\a cdsLibManager->cellLineEdit->value = "dff_en2"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(465 409 343 180))
+\a basicRenameForm->basicRenameToEdit->value = "dff_en"
+\a basicRenameForm->OK->value = t
+\o Renaming Cell "dff_en2" to "dff_en" in library "ece555_final".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(481 381 310 236))
+\a workingDialogForm->Close->value = t
+\a nrSetWindowVisibility(workingDialogForm "hide")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\o MPS request: update library list
+\w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
+\w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a nrSetWindowVisibility(basicRenameForm "hide")
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->cellListBox 5 0)
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
+\w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = nil
+\a nrListItemAction(cdsLibManager->cellListBox 5 0)
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")

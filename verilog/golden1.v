@@ -5,7 +5,7 @@
 //
 // consists of: 16b datapath, 32b ppgen, 32b RCAdd, 32b log shift, FSM
 ////////////////////////////////////////////////////////////////////////////////
-module golden0(input clk, rst, start, 
+module golden1(input clk, rst, start, 
     inout  [31:0] Z,
     output reg [31:0] A, B, 	 
     output 	      done);
