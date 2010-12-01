@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - fsm, View - schematic
-// LAST TIME SAVED: Nov 30 22:09:43 2010
-// NETLIST TIME: Nov 30 22:12:41 2010
+// LAST TIME SAVED: Dec  1 14:42:59 2010
+// NETLIST TIME: Dec  1 14:43:29 2010
 `timescale 1ns / 1ns 
 
 module x_fsm ( add_en, done, left_right, ppgen_en, rd_enA, rd_enB,
@@ -16,9 +16,9 @@ output [4:0]  rd_enA;
 
 // Buses in the design
 
-wire  [0:1]  next_state;
-
 wire  [5:0]  cnt;
+
+wire  [0:1]  next_state;
 
 wire  [0:1]  state;
 
@@ -30,9 +30,9 @@ specify
 endspecify
 
 counter I0 ( cnt[5:0], clk, cnt_en);
-dff I87 ( done, clk, next_done);
-dff I2 ( state[1], clk, net062);
-dff I1 ( state[0], clk, net059);
+dff I150 ( state[1], net062, clk);
+dff I151 ( done, next_done, clk);
+dff I152 ( state[0], net059, clk);
 and_ I81 ( net0200, two, state[0]);
 and_ I122 ( net059, next_state[0], rst_n);
 and_ I129 ( cnt_en, rst_n, net041);

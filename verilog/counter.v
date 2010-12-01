@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - counter, View - schematic
-// LAST TIME SAVED: Nov 29 17:30:17 2010
-// NETLIST TIME: Nov 29 23:50:06 2010
+// LAST TIME SAVED: Dec  1 14:42:45 2010
+// NETLIST TIME: Dec  1 14:43:27 2010
 `timescale 1ns / 1ns 
 
 module counter ( Q, clk, en );
@@ -20,12 +20,12 @@ specify
     specparam CDS_VIEWNAME = "schematic";
 endspecify
 
-dff I5 ( Q[2], clk, D[2]);
-dff I4 ( Q[1], clk, D[1]);
-dff I3 ( Q[0], clk, D[0]);
-dff I2 ( Q[4], clk, D[4]);
-dff I1 ( Q[3], clk, D[3]);
-dff I0 ( Q[5], clk, D[5]);
+dff I19 ( Q[2], D[2], clk);
+dff I18 ( Q[1], D[1], clk);
+dff I3 ( Q[0], D[0], clk);
+dff I21 ( Q[4], D[4], clk);
+dff I20 ( Q[3], D[3], clk);
+dff I22 ( Q[5], D[5], clk);
 full_add I11 ( net043, net044, Q[5], 0, net047);
 full_add I10 ( net047, net049, Q[4], 0, net052);
 full_add I9 ( net052, net054, Q[3], 0, net057);

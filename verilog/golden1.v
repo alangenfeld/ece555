@@ -1,3 +1,4 @@
+`timescale 1ns / 1ns 
 ////////////////////////////////////////////////////////////////////////////////
 // FINAL PROJECT
 //
@@ -7,7 +8,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 module golden1(input clk, rst, start, 
     inout  [31:0] Z,
-    output reg [31:0] A, B, 	 
+    output [31:0] A, B, 	 
     output 	      done);
 
 
@@ -38,27 +39,19 @@ module golden1(input clk, rst, start,
    reg32 r5(reg5[31:0], Z[31:0], clk, wr_en[4]);
    
    // register read
-   always @*
-     case (rd_enA)
-       5'b00001: A = reg1;
-       5'b00010: A = reg2;
-       5'b00100: A = reg3;
-       5'b01000: A = reg4;
-       5'b10000: A = reg5;
-       default:
-	 A = 32'hZZZZ_ZZZZ;
-     endcase
 
-   always @*
-     case (rd_enB)
-       5'b00001: B = reg1;
-       5'b00010: B = reg2;
-       5'b00100: B = reg3;
-       5'b01000: B = reg4;
-       5'b10000: B = reg5;
-       default:
-	 B = 32'hZZZZ_ZZZZ;
-     endcase
+   assign A = (rd_enA == 5'b00001) ? reg1 : 
+	      (rd_enA == 5'b00010) ? reg2 : 
+	      (rd_enA == 5'b00100) ? reg3 : 
+	      (rd_enA == 5'b01000) ? reg4 : 
+	      (rd_enA == 5'b10000) ? reg5 : 32'hZZZZ_ZZZZ;
+
+   assign B = (rd_enB == 5'b00001) ? reg1 : 
+	      (rd_enB == 5'b00010) ? reg2 : 
+	      (rd_enB == 5'b00100) ? reg3 : 
+	      (rd_enB == 5'b01000) ? reg4 : 
+	      (rd_enB == 5'b10000) ? reg5 : 32'hZZZZ_ZZZZ;
+
 	
 ////////////////////////////////////////////////////////////////////////////////   
 // Adder
