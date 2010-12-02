@@ -4,7 +4,7 @@ module t_dff();
    reg clk,sq, d;
    
    
-   dff DUT(.D(d), .Q(q), .clk(clk));
+   dff DUT(.D(d), .Q(q), .CLK(clk));
    
    
    always #4 clk = ~clk;
