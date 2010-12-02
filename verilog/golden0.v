@@ -6,7 +6,7 @@
 // consists of: 16b datapath, 32b ppgen, 32b RCAdd, 32b log shift, FSM
 ////////////////////////////////////////////////////////////////////////////////
 module golden0(input clk, rst, start, 
-    input  [31:0] Z,
+    inout  [31:0] Z,
     output reg [31:0] A, B, 	 
     output 	      done);
 
@@ -18,11 +18,7 @@ module golden0(input clk, rst, start,
    wire [4:0] 	  rd_enA, rd_enB, wr_en;
    wire 	  left_right, ppgen_en, add_en, shift_en;
  	  
-   wire [31:0] 	  adder_out, shifter_out ppgen_out;
-   
-
-   
-
+   wire [31:0] 	  adder_out, shifter_out, ppgen_out;
    reg 		  ERROR;
 
 ////////////////////////////////////////////////////////////////////////////////   
@@ -36,24 +32,15 @@ module golden0(input clk, rst, start,
 
    // register write
    always @ (posedge clk) begin
-      /* I dont think we need to reset registers   
-       if (rst == 1) begin
-	 reg1 <= 32'h0000_0000;
-	 reg2 <= 32'h0000_0000;
-	 reg3 <= 32'h0000_0000;
-	 reg4 <= 32'h0000_0000;
-	 reg5 <= 32'h0000_0001;
-      end
-       */
-      if (wr_en[0])
+      if (wr_en[0] == 1)
 	reg1 <= Z;
-      if (wr_en[1])
+      if (wr_en[1] == 1)
 	reg2 <= Z;
-      if (wr_en[2])
+      if (wr_en[2] == 1)
 	reg3 <= Z;
-      if (wr_en[3])
+      if (wr_en[3] == 1)
 	reg4 <= Z;
-      if (wr_en[4])
+      if (wr_en[4] == 1)
 	reg5 <= Z;
    end // always @ (posedge clk)
 
@@ -65,8 +52,8 @@ module golden0(input clk, rst, start,
        5'b00100: A = reg3;
        5'b01000: A = reg4;
        5'b10000: A = reg5;
-       defualt:
-	 ERROR = 1;
+       default:
+	 A = 32'hZZZZ_ZZZZ;
      endcase
 
    always @*
@@ -76,8 +63,8 @@ module golden0(input clk, rst, start,
        5'b00100: B = reg3;
        5'b01000: B = reg4;
        5'b10000: B = reg5;
-       defualt:
-	 ERROR = 1;
+       default:
+	 B = 32'hZZZZ_ZZZZ;
      endcase
 	
 ////////////////////////////////////////////////////////////////////////////////   
@@ -88,7 +75,7 @@ module golden0(input clk, rst, start,
 ////////////////////////////////////////////////////////////////////////////////   
 // Shifter
 ////////////////////////////////////////////////////////////////////////////////
-   assign shifter_out = (left_right == 1) ? A[31:0] << B[4:0] : A[31:0] >> B[4:0];
+   assign shifter_out = (left_right == 0) ? B[31:0] << A[4:0] : B[31:0] >> A[4:0];
    
 ////////////////////////////////////////////////////////////////////////////////   
 // Partial Product Generator
@@ -98,22 +85,26 @@ module golden0(input clk, rst, start,
 ////////////////////////////////////////////////////////////////////////////////   
 // Z bus
 ////////////////////////////////////////////////////////////////////////////////
-   always @*
+/*   always @*
      case({add_en, shift_en, ppgen_en})
        3'b000: Z = 32'hZZZZ_ZZZZ;
        3'b001: Z = adder_out[31:0];
        3'b010: Z = shifter_out[31:0];
        3'b100: Z = ppgen_out[31:0];
-       defualt:	ERROR = 1;
+       default:	ERROR = 1;
      endcase // case ({add_en, shift_en, ppgen_en})
-   
+ */
+ assign Z = (add_en == 1) ? adder_out[31:0] :
+            (shift_en == 1) ? shifter_out[31:0] :
+            (ppgen_en == 1) ? ppgen_out[31:0] : 32'hZZZZ_ZZZZ; 
    
 ////////////////////////////////////////////////////////////////////////////////   
 // FSM "The Boss"
 ////////////////////////////////////////////////////////////////////////////////
-   fsm theBoss(.clk(clk), .rst(rst), // in  
-	       .rd_enA(rd_enA), .rd_enB(rd_enB), .wr_en(wr_en), .done(done) // out
-	       );
+   fsm theBoss(.clk(clk), .rst(rst), .start(start), // in  
+	       .rd_enA(rd_enA), .rd_enB(rd_enB), .wr_en(wr_en), .done(done), // out
+	       .shift_en(shift_en), .ppgen_en(ppgen_en), .add_en(add_en), //out
+	       .left_right(left_right)); //in
 
 endmodule // golden0
 

@@ -1,0 +1,8 @@
+*.bak
+.cadence
+transcript
+verilog/transcript
+*.run*
+libManager.*
+verilog/INCA*
+verilog/.sim*

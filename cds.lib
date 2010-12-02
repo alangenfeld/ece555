@@ -1,5 +1,2 @@
 INCLUDE /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/share/cdssetup/cds.lib
-DEFINE project_lib /filespace/people/a/alangenf/ece555/project_lib
-DEFINE ece555_final_project /filespace/people/j/jnystrom/ece555/ece555_final_project
-DEFINE ece555_final /filespace/people/j/jnystrom/ece555/ece555_final
-#Removed by ddDeleteObj: DEFINE dff_en /filespace/people/j/jnystrom/ece555/dff_en
+DEFINE project_lib ./project_lib
