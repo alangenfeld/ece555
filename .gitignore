@@ -6,3 +6,5 @@ verilog/transcript
 libManager.*
 verilog/INCA*
 verilog/.sim*
+libManager.log
+LVS
