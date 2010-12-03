@@ -25,16 +25,18 @@ si: simSetDef().... simPostAnalysisProcessingFunc is initialized to "nil".
 si: simSetDef().... simNotifyKillActionFunc is initialized to "nil".
 si: simSetDef().... simDoNotDisplayDialogBox is initialized to "nil".
 si: simSetDef().... simNetlistFileName is initialized to "netlist" .
-si: simSetDef().... simMaxNetlistErrors is initialized to 25 .
 si: simSetDef().... simUserDefineDefaultRunDirFunc is initialized to "nil".
 si: simSetDef().... simNlpGlobalLibName is initialized to "basic" .
 si: simSetDef().... simNlpGlobalCellName is initialized to "nlpglobals" .
-si: simSetDef().... simCommand is initialized to "" .
-si: simSetDef().... simSedFile is initialized to "" .
-si: simSetDef().... simDefaultSimulator is already set to "spice". Redefinition
-to nil is ignored.
-si: simSetDef().... simDefaultRunDir is already set to "LVS". Redefinition to
-nil is ignored.
+si: simSetDef().... simCommand is already set to prog((status) if((simHost ==
+"localhost") (status = vlogifRunLocalBatch()) (status = vlogifRunRemoteBatch()))
+return(status)). Redefinition to "" is ignored.
+si: simSetDef().... simSedFile is already set to
+"/afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/etc/si/sed.ver".
+Redefinition to "" is ignored.
+si: simSetDef().... simDefaultSimulator is initialized to "nil".
+si: simSetDef().... simDefaultRunDir is already set to "". Redefinition to nil
+is ignored.
 si: simSetDef().... simSymbolModifiedAction is initialized to "ignore" .
 si: simSetDef().... simOtherInfo is initialized to "nil".
 si: simSetDef().... simIsFlattenP is initialized to "nil".
@@ -43,17 +45,16 @@ si: simSetDef().... simDiffInputFile is initialized to "simdiff.stl" .
 si: simSetDef().... simNoSimdiff is initialized to "nil".
 si: simSetDef().... simDefaultControl is initialized to "nil".
 si: simSetDef().... simControlFile is initialized to "nil".
-si: simSetDef().... simLogFile is initialized to "si.log" .
 si: simSetDef().... simTimeUnit is initialized to 1e-09 .
 si: simSetDef().... simCapUnit is initialized to 1e-15 .
 si: simSetDef().... simDoNetlist is initialized to t .
-si: simSetDef().... simDoSimulate is initialized to t .
-si: simSetDef().... simNetlistHier is initialized to "nil".
+si: simSetDef().... simNetlistHier is already set to t. Redefinition to nil is
+ignored.
 si: simSetDef().... simGlobalPrefix is initialized to "nil".
-si: simSetDef().... simHierarchyPrefix is initialized to "nil".
+si: simSetDef().... simHierarchyPrefix is already set to "test.top".
+Redefinition to nil is ignored.
 si: simSetDef().... simNoLeadingHierarchyDelim is initialized to "nil".
 si: simSetDef().... simPrefixHierarchyWithCV is initialized to "nil".
-si: simSetDef().... simHierarchyDelimiter is initialized to "/" .
 si: simSetDef().... simNetNamePrefix is initialized to "nil".
 si: simSetDef().... simInstNamePrefix is initialized to "nil".
 si: simSetDef().... simModelNamePrefix is initialized to "nil".
@@ -64,13 +65,9 @@ si: simSetDef().... simCleanFileList is initialized to "nil".
 si: simSetDef().... simSimulatorSaveVars is initialized to "nil".
 si: simSetDef().... simApplicationOptionsForm is initialized to "nil".
 si: simSetDef().... simSimulatorSaveFiles is initialized to "nil".
-si: simSetDef().... simDontCopyFileNetlistToRemoteRunDir is initialized to
-"nil".
+si: simSetDef().... simDontCopyFileNetlistToRemoteRunDir is already set to t.
+Redefinition to nil is ignored.
 si: simSetDef().... simRsh is initialized to "nil".
-si: simSetDef().... simMustSaveFiles is initialized to (("si.env" "text")) .
-si: simSetDef().... simKnownSaveFiles is initialized to (("netlist" "netlist")
-("control" "text") ("si.out" "text") ("si.log" "text") ("map/current"
-"stranger") ("raw/waves" "stranger")) .
 si: simSetDef().... simNotIncremental is initialized to "nil".
 si: simSetDef().... simReNetlistAll is initialized to "nil".
 si: simSetDef().... simUnbindVars is initialized to (interactiveTAP
@@ -89,8 +86,8 @@ simPostAnalysisProcessingFunc simPrintSilosCap simReNetlistAll simRetainFterms
 simStlInputFile simSimulatorSaveFiles simSimulatorSaveVars
 simSymbolModifiedAction simTermNamePrefix simTimeUnit simViewList simViewName)
 .
-si: simSetDef().... simUnbindFuncs is initialized to (STLsimin cat netlist
-runsim sim simCatErrorFile simCheckExist simCheckHeader simCheckVariables
+si: simSetDef().... simUnbindFuncs is initialized to STLsimin(cat netlist runsim
+sim simCatErrorFile simCheckExist simCheckHeader simCheckVariables
 simCreateRemoteCommands simDateStamp simDeleteRunDirFile simDoHiloTranslation
 simDoSilosTranslation simDoTaTranslation simErrHandler simExecuteWithStatus
 simExecute simGetSiFileLocation simGetTermList simIfNoProcedure simin
@@ -100,8 +97,6 @@ simNoNetlist simout simout1 simPostFunc simPrintEnvironment simPrintTermList
 simPrintTermListWithOption simRunDirInfile simRunDirLoad simRunDirOutfile
 simRunSimdiff simRunEqivRemoteSim simRunStl simSetDef simSetDefWithNoWarn
 simGetSiFileLocation) .
-si: simSetDef().... simSaveVars is initialized to (simLibName simCellName
-simViewName simSimulator simNotIncremental simReNetlistAll) .
 si: simSetDef().... simDoNotForkNetlist is initialized to "nil".
 si: simSetDef().... interactiveTAP is initialized to "nil".
 si: simSetDef().... simPrintSilosCap is initialized to "nil".
@@ -157,6 +152,148 @@ si: simSetDef().... simCleanFileList is initialized to ("layout/netbad.out"
 "schematic/prunedev.out" "schematic/prunenet.out" "schematic/audit.out"
 "schematic/ovfldev.out" "schematic/ovflnet.out" "lvs.cpoint" "si.out"
 "xref.out") .
+si: Loading file "/filespace/people/j/jnystrom/ece555/LVS/si.env".
+si: simSetDef().... simInstViewListTable is initialized to "nil".
+si: simSetDef().... simInstStopListTable is initialized to "nil".
+si: simSetDef().... applyDeviceFixing is initialized to "nil".
+si: simSetDef().... lvsNetlistLayout is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
+is ignored.
+si: simSetDef().... correspondenceFile is already set to
+"/filespace/people/j/jnystrom/ece555/lvs_corr_file". Redefinition to nil is
+ignored.
+si: simSetDef().... createXref is initialized to "nil".
+si: simSetDef().... disableLikeMatch is initialized to "nil".
+si: simSetDef().... disableRewire is initialized to "nil".
+si: simSetDef().... useFileCorrespondence is initialized to "nil".
+si: simSetDef().... useLastBinaryXrefTable is initialized to "nil".
+si: simSetDef().... useTerminalCorrespondence is already set to t. Redefinition
+to nil is ignored.
+si: simSetDef().... lvsRulesFilePath is already set to "divaLVS.rul".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesLibName is already set to "NCSU_TechLib_tsmc02d".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesFromLib is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... simInstViewListTable is initialized to "nil".
+si: simSetDef().... simInstStopListTable is initialized to "nil".
+si: simSetDef().... applyDeviceFixing is initialized to "nil".
+si: simSetDef().... lvsNetlistLayout is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
+is ignored.
+si: simSetDef().... correspondenceFile is already set to
+"/filespace/people/j/jnystrom/ece555/lvs_corr_file". Redefinition to nil is
+ignored.
+si: simSetDef().... createXref is initialized to "nil".
+si: simSetDef().... disableLikeMatch is initialized to "nil".
+si: simSetDef().... disableRewire is initialized to "nil".
+si: simSetDef().... useFileCorrespondence is initialized to "nil".
+si: simSetDef().... useLastBinaryXrefTable is initialized to "nil".
+si: simSetDef().... useTerminalCorrespondence is already set to t. Redefinition
+to nil is ignored.
+si: simSetDef().... lvsRulesFilePath is already set to "divaLVS.rul".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesLibName is already set to "NCSU_TechLib_tsmc02d".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesFromLib is already set to t. Redefinition to nil is
+ignored.
+si: Loading file "/filespace/people/j/jnystrom/ece555/LVS/si.env".
+si: simSetDef().... simInstViewListTable is initialized to "nil".
+si: simSetDef().... simInstStopListTable is initialized to "nil".
+si: simSetDef().... applyDeviceFixing is initialized to "nil".
+si: simSetDef().... lvsNetlistLayout is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
+is ignored.
+si: simSetDef().... correspondenceFile is already set to
+"/filespace/people/j/jnystrom/ece555/lvs_corr_file". Redefinition to nil is
+ignored.
+si: simSetDef().... createXref is initialized to "nil".
+si: simSetDef().... disableLikeMatch is initialized to "nil".
+si: simSetDef().... disableRewire is initialized to "nil".
+si: simSetDef().... useFileCorrespondence is initialized to "nil".
+si: simSetDef().... useLastBinaryXrefTable is initialized to "nil".
+si: simSetDef().... useTerminalCorrespondence is already set to t. Redefinition
+to nil is ignored.
+si: simSetDef().... lvsRulesFilePath is already set to "divaLVS.rul".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesLibName is already set to "NCSU_TechLib_tsmc02d".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesFromLib is already set to t. Redefinition to nil is
+ignored.
+si: Loading file "/filespace/people/j/jnystrom/ece555/LVS/si.env".
+si: simSetDef().... simInstViewListTable is initialized to "nil".
+si: simSetDef().... simInstStopListTable is initialized to "nil".
+si: simSetDef().... applyDeviceFixing is initialized to "nil".
+si: simSetDef().... lvsNetlistLayout is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
+is ignored.
+si: simSetDef().... correspondenceFile is already set to
+"/filespace/people/j/jnystrom/ece555/lvs_corr_file". Redefinition to nil is
+ignored.
+si: simSetDef().... createXref is initialized to "nil".
+si: simSetDef().... disableLikeMatch is initialized to "nil".
+si: simSetDef().... disableRewire is initialized to "nil".
+si: simSetDef().... useFileCorrespondence is initialized to "nil".
+si: simSetDef().... useLastBinaryXrefTable is initialized to "nil".
+si: simSetDef().... useTerminalCorrespondence is already set to t. Redefinition
+to nil is ignored.
+si: simSetDef().... lvsRulesFilePath is already set to "divaLVS.rul".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesLibName is already set to "NCSU_TechLib_tsmc02d".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesFromLib is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... simInstViewListTable is initialized to "nil".
+si: simSetDef().... simInstStopListTable is initialized to "nil".
+si: simSetDef().... applyDeviceFixing is initialized to "nil".
+si: simSetDef().... lvsNetlistLayout is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
+is ignored.
+si: simSetDef().... correspondenceFile is already set to
+"/filespace/people/j/jnystrom/ece555/lvs_corr_file". Redefinition to nil is
+ignored.
+si: simSetDef().... createXref is initialized to "nil".
+si: simSetDef().... disableLikeMatch is initialized to "nil".
+si: simSetDef().... disableRewire is initialized to "nil".
+si: simSetDef().... useFileCorrespondence is initialized to "nil".
+si: simSetDef().... useLastBinaryXrefTable is initialized to "nil".
+si: simSetDef().... useTerminalCorrespondence is already set to t. Redefinition
+to nil is ignored.
+si: simSetDef().... lvsRulesFilePath is already set to "divaLVS.rul".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesLibName is already set to "NCSU_TechLib_tsmc02d".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesFromLib is already set to t. Redefinition to nil is
+ignored.
+si: Loading file "/filespace/people/j/jnystrom/ece555/LVS/si.env".
+si: simSetDef().... simInstViewListTable is initialized to "nil".
+si: simSetDef().... simInstStopListTable is initialized to "nil".
+si: simSetDef().... applyDeviceFixing is initialized to "nil".
+si: simSetDef().... lvsNetlistLayout is already set to t. Redefinition to nil is
+ignored.
+si: simSetDef().... lvsNetlistSchematic is already set to t. Redefinition to nil
+is ignored.
+si: simSetDef().... correspondenceFile is already set to
+"/filespace/people/j/jnystrom/ece555/lvs_corr_file". Redefinition to nil is
+ignored.
+si: simSetDef().... createXref is initialized to "nil".
+si: simSetDef().... disableLikeMatch is initialized to "nil".
+si: simSetDef().... disableRewire is initialized to "nil".
+si: simSetDef().... useFileCorrespondence is initialized to "nil".
+si: simSetDef().... useLastBinaryXrefTable is initialized to "nil".
+si: simSetDef().... useTerminalCorrespondence is already set to t. Redefinition
+to nil is ignored.
+si: simSetDef().... lvsRulesFilePath is already set to "divaLVS.rul".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesLibName is already set to "NCSU_TechLib_tsmc02d".
+Redefinition to "" is ignored.
+si: simSetDef().... lvsRulesFromLib is already set to t. Redefinition to nil is
+ignored.
 si: Loading file "/filespace/people/j/jnystrom/ece555/LVS/si.env".
 si: simSetDef().... simInstViewListTable is initialized to "nil".
 si: simSetDef().... simInstStopListTable is initialized to "nil".
