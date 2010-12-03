@@ -1,0 +1,2 @@
+INCLUDE /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/share/cdssetup/cds.lib
+DEFINE project_lib ./project_lib
