@@ -1,327 +1,230 @@
 \o Program:		@(#)$CDS: libManagerOA.exe version 6.1.1 01/10/2007 08:46 (cat61lnx) $
 \o Sub version:		sub-version 06.03-p001
-\o Arguments:		-mpssession virtuoso15134 -mpshost tux-48 
-\o Working Directory:	tux-48:/filespace/people/a/alangenf/ece555
+\o Arguments:		-mpssession virtuoso5332 -mpshost tux-46 
+\o Working Directory:	tux-46:/filespace/people/j/jnystrom/ece555
 \o Qt version: 		4.1.4
-\o Log file is "/filespace/people/a/alangenf/ece555/libManager.log".
+\o Log file is "/filespace/people/j/jnystrom/ece555/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
-\w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
 \a nrResizeWindow(cdsLibManager list(0 25 1272 948))
-\o changeWorkingDir("/filespace/people/a/alangenf/ece555")
+\o changeWorkingDir("/filespace/people/j/jnystrom/ece555")
 \o MPS request: update library list
-\w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
-\w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
 \o ddSetForcedLib("")
-\w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
-\w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
 \o MPS service: map window
-\w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
-\w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
 \o Library Manager customization server connected.
 \a cdsLibManager->libListBox->value = "ece555_final"
 \a cdsLibManager->libListBox->value = "ece555_final"
 \a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "dff"
-\a cdsLibManager->cellLineEdit->value = "dff"
-\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 2 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "extracted"
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = ""
-\w Warning: The directory: '/filespace/people/a/alangenf/ece555/project_lib' does not exist
-\w 	but was defined in libFile '/filespace/people/a/alangenf/ece555/cds.lib' for Lib 'project_lib'.
 \a cdsLibManager->libLineEdit->value = "ece555_final"
 \a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "dff"
-\a cdsLibManager->cellLineEdit->value = "dff"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "counter"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrListItemAction(cdsLibManager->cellListBox 3 0)
-\a cdsLibManager->cellLineEdit->value = "counter"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "fsm"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a nrListItemAction(cdsLibManager->cellListBox 8 0)
-\a cdsLibManager->cellListBox->value = "fsm"
-\a cdsLibManager->cellLineEdit->value = "fsm"
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "counter"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "dff"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "dff"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 2 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "fsm"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "fsm"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "dff"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "dff"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 2 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "fsm"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrListItemAction(cdsLibManager->cellListBox 8 0)
-\a cdsLibManager->cellLineEdit->value = "fsm"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "dff_en"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrListItemAction(cdsLibManager->cellListBox 6 0)
-\a cdsLibManager->cellLineEdit->value = "dff_en"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "counter"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "counter"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "full_add"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellLineEdit->value = "full_add"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "counter"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellLineEdit->value = "counter"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "full_add"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "full_add"
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "dff"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellLineEdit->value = "dff"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 2 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "dff2"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "dff2"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 2 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = "dff2"
-\a cdsLibManager->cellLineEdit->value = "dff2"
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 2 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "counter"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "dff"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "dff"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "counter"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellLineEdit->value = "counter"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "dff"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "dff"
-\a cdsLibManager->viewListBox->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 1 0)
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "pp_gen"
+\a cdsLibManager->cellLineEdit->value = "pp_gen"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \o libManager is exiting.
 \a exit(0)
