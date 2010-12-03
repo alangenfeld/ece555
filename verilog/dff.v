@@ -1,12 +1,12 @@
 // Library - ece555_final, Cell - dff, View - schematic
-// LAST TIME SAVED: Nov 20 09:57:05 2010
-// NETLIST TIME: Dec  1 14:43:26 2010
+// LAST TIME SAVED: Dec  2 19:44:38 2010
+// NETLIST TIME: Dec  2 19:45:32 2010
 `timescale 1ns / 1ns 
 
-module dff ( Q, D, clk );
+module dff ( Q, CLK, D );
 output  Q;
 
-input  D, clk;
+input  CLK, D;
 
 
 specify 
@@ -15,27 +15,27 @@ specify
     specparam CDS_VIEWNAME = "schematic";
 endspecify
 
-pmos P10 ( net0105, net60, clkbar);
-pmos P9 ( net0105, net59, clk);
-pmos P8 ( net88, net84, clk);
-pmos P7 ( net88, net75, clkbar);
-pmos P6 ( Q, 1, net0105);
-pmos P5 ( net60, 1, Qm);
-pmos P4 ( net59, 1, Q);
-pmos P3 ( Qm, 1, net88);
-pmos P2 ( net75, 1, Qm);
-pmos P1 ( net84, 1, D);
-pmos P0 ( clkbar, 1, clk);
-nmos N10 ( Q, 0, net0105);
-nmos N9 ( net0105, net60, clk);
-nmos N8 ( net0105, net59, clkbar);
-nmos N7 ( net60, 0, Qm);
-nmos N6 ( net59, 0, Q);
-nmos N5 ( Qm, 0, net88);
-nmos N4 ( net88, net84, clkbar);
-nmos N3 ( net88, net75, clk);
-nmos N2 ( clkbar, 0, clk);
-nmos N1 ( net84, 0, D);
-nmos N0 ( net75, 0, Qm);
+pmos P19 ( net088, 1, net086);
+pmos P17 ( net0155, net088, CLK_n);
+pmos P20 ( net096, 1, D);
+pmos P18 ( net086, 1, net0155);
+pmos P16 ( Q, 1, net0147);
+pmos P26 ( net0147, net084, CLK);
+pmos P14 ( net0155, net096, CLK);
+pmos P27 ( net0147, net0128, CLK_n);
+pmos P15 ( net084, 1, Q);
+pmos P21 ( CLK_n, 1, CLK);
+pmos P10 ( net0128, 1, net086);
+nmos N17 ( net086, 0, net0155);
+nmos N16 ( Q, 0, net0147);
+nmos N13 ( net044, 0, net086);
+nmos N23 ( net0147, net51, CLK);
+nmos N10 ( net0155, net044, CLK);
+nmos N9 ( net0155, net0151, CLK_n);
+nmos N18 ( net0120, 0, Q);
+nmos N7 ( CLK_n, 0, CLK);
+nmos N5 ( net0151, 0, D);
+nmos N21 ( net0147, net0120, CLK_n);
+nmos N14 ( net51, 0, net086);
 
 endmodule
