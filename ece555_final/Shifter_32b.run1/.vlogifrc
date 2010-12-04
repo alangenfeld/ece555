@@ -1,0 +1,463 @@
+;Setup Menu Forms
+;Setup Environment
+;Run Directory
+vlogifVicSimRunDir = "/filespace/people/s/srick/Desktop/shifter_testing/shifter_testing/Shifter_32b.run1"
+
+;Library
+vlogifVicSimLibName = "shifter_testing"
+
+;Cell
+vlogifVicSimCellName = "Shifter_32b"
+
+;View
+vlogifVicSimViewName = "schematic"
+
+;Run Simulation
+vlogifSimRunMode = "locally"
+
+;On Host
+simHost = "localhost"
+
+;Remote Simulation Host Name
+vlogifSimRemoteHostName = 'nil
+
+;by
+vlogifSimRemoteMode = "mounting"
+
+;Run Directory As Viewed By Simulation Host
+vlogifSimRemMountDir = "Shifter_32b.run1"
+
+;Directory On Simulation Host To Temporarily Store Run Directory
+vlogifSimRemCopyDir = "Shifter_32b.run1"
+
+;Use Delay File At Time Zero
+vlogifUseSDF = 'nil
+
+;Back Annotate Multiple SDF Files
+vlogifMultipleSDFFileList = 'nil
+
+;Verilog Netlisting Options
+;Netlist Entire Design
+simReNetlistAll = 'nil
+
+;Netlist For LAI/LMSI Models
+simVerilogLaiLmsiNetlisting = 'nil
+
+;Netlist These Views
+verilogSimViewList = '("behavioral" "functional" "system" "verilog" "pld_verilog"
+    "lai_verilog" "lmsi_verilog" "schematic" "symbol"
+)
+
+;Netlist Automatically to Simulate Design Changes
+simVerilogAutoNetlisting = t
+
+;Use TestFixture
+simVerilogTestFixtureFlag = t
+
+;Generate Test Fixture Template
+simVerilogTestFixtureTemplate = "All"
+
+;Netlist Explicitly
+simVerilogNetlistExplicit = 'nil
+
+;Preserve Buses
+simVerilogFlattenBuses = 'nil
+
+;Netlist Uppercase
+vtoolsUseUpperCaseFlag = 'nil
+
+;Generate Pin Map
+hnlVerilogCreatePM = t
+
+;Netlist SwitchRC
+simVerilogHandleSwitchRCData = 'nil
+
+;Skip Null Port
+simVerilogProcessNullPorts = 'nil
+
+;Netlist Uselib
+simVerilogHandleUseLib = 'nil
+
+;Drop Port Range
+simVerilogDropPortRange = t
+
+;Incremental Config List
+simVerilogIncrementalNetlistConfigList = 'nil
+
+;Symbol Implicit
+hnlVerilogNetlistStopCellImplicit = 'nil
+
+;Global TimeScale Overwrite Schematic TimeScale
+simVerilogOverWriteSchTimeScale = 'nil
+
+;Declare Global Locally
+vlogifDeclareGlobalNetLocal = 'nil
+
+;Skip Timing Information
+vlogifSkipTimingInfo = 'nil
+
+;Assign For Alias
+vlogifUseAssignsForAlias = 'nil
+
+;Support Escape Names
+simVerilogEnableEscapeNameMapping = 'nil
+
+;Support VhdlImport
+simVerilogVhdlImport = 'nil
+
+;Leapfrog Command Line
+simVerilogLeapfrogCosimCommand = "+Leapfrog_options-log,leapfrog.log"
+
+;Leapfrog Message Prefix
+simVerilogLeapfrogCosimMessage = "+Leapfrog_prefixLeapfrog"
+
+;Cosim Warning Off
+simVerilogLeapfrogCosimWarnOff = t
+
+;Stop Netlisting at Views 
+verilogSimStopList = '("verilog" "pld_verilog" "lai_verilog" "lmsi_verilog" "symbol")
+
+;Global Power Nets
+simVerilogPwrNetList = '("VDD")
+
+;Global Ground Nets
+simVerilogGndNetList = '("GND")
+
+;Global Sim Time
+simVerilogSimTimeValue = 1
+
+;Unit
+simVerilogSimTimeUnit = "ns"
+
+;Global Sim Precision
+simVerilogSimPrecisionValue = 1
+
+;Unit
+simVerilogSimPrecisionUnit = "ns"
+
+;Force ReNetlist Reasons
+vtoolsifForceReNetlisting = 'nil
+
+;Simulation Options
+;Command File
+simVerilogInteractiveCommandFile = ""
+
+;Options File
+simVerilogInvocationOptionsFile = ""
+
+;Other Options
+simVerilogInvocationOptions = "+libext+.v+ +incdir+hdlFilesDir +sdf_verbose"
+
+;Library Files
+simVerilogLibraryFile = ""
+
+;Library Directories
+simVerilogLibraryDirectory = ""
+
+;Verilog-XL Executable
+verilogSimBinary = "verilog"
+
+;Simulation Log File
+verilogLogFile = "simout.tmp"
+
+;Stop After Compilation
+simVerilogStopAfterCompilation = t
+
+;Record Signals Options
+;Waveform Display Package
+simVerilogWavePackageVar = "Simvision"
+
+;in Simulation History File
+simVerilogResultsShmFile = "shm.db"
+
+;Save
+simVerilogShmInvokeChoice = "Top Level Primary I/O"
+
+;Save Shm Results
+simVerilogShmResultInvokeBoolean = t
+
+;Run SHM
+vlogifShmRunMode = "locally"
+
+;On Host
+vlogifShmHostName = "localhost"
+
+;Remote Shmd Host Name
+vlogifShmRemoteHostName = 'nil
+
+;by
+vlogifShmRemoteMode = "mounting"
+
+;Run Directory As Viewed By SHM Host
+vlogifShmRemMountDir = "Shifter_32b.run1"
+
+;Directory On SHM Host To Temporarily Store Run Directory
+vlogifShmRemCopyDir = "Shifter_32b.run1"
+
+; Stimulus file list
+;Test Fixture files
+vlogifTestFixtureFileList = '("testfixture.verilog")
+
+;Current test fixture
+vlogifCurrentTestFixture = "/filespace/people/s/srick/Desktop/shifter_testing/shifter_testing/Shifter_32b.run1/testfixture.verilog"
+
+;Full Test files 
+vlogifFullTestFileList = '(" ")
+
+;Self Stimulus Reference Name
+vicSelfStimulusHandle = "SelfStimulus"
+
+;Test Fixture RunObject List
+vlogifTFRunObjectList = '(
+    (nil checkSyntax nil dip "test.top"
+    currentShmDb nil dbList nil fileType
+    "Stimulus" runObject "RunObject.0" testfixture "testfixture.verilog"
+    )
+)
+
+;Design Instance Path
+simVerilogTopLevelModuleName = "test.top"
+
+;VCompare Executable
+vlogifVCompareExecutable = "/filespace/people/s/srick/Desktop/shifter_testing/shifter_testing/comparescan"
+
+;Remote Simulation Netlisting Check
+vlogifRemoteSimNetlistCheck = t
+
+;Simulation Run Time Options
+vlogifSetupOptionsDPL = '(nil vicSetupResultsMemoryUnit "ns" vicSetupResultsMemoryValue 0.0
+vicSetupResultsMemoryMode "Unlimited" vicSetupResultsShmFile "shm.db" vicSetupResultsInvokeShmChoice
+"Top Level Primary I/O" vicSetupResultsWaveformPackage "Simvision" vicSetupResultsInvokeShmBoolean t
+vicSetupSimLogBoolean t vicSetupSimUseHierarchyBrowser t vicSetupSimSuppressWarning
+nil vicSetupSimSuppressMessage nil vicSetupSimPulseCtlSpecparam nil
+vicSetupSimPulseCtlReject 100 vicSetupSimPulseCtlError 100 vicSetupSimDelayTypeRadio
+"Typical" vicSetupSimDelayModeRadio "Path" vicSetupSimBehaviorProfiler nil
+vicSetupSimTurboRadio "Default" vicSetupSimTwinTurbo nil vicSetupSimSxlRadio
+"Minimum" vicSetupSimSwitch nil vicSetupSimContAssign nil
+vicSetupSimNormal t vicSetupEnvSDFScaleMax 1.0 vicSetupEnvSDFScaleTyp
+1.0 vicSetupEnvSDFScaleMin 1.0 vicSetupEnvSDFScaleFactorConfig nil
+vicSetupEnvSDFScaleType "Min_Typ_Max" vicSetupEnvSDFDelayType "Tool Control" vicSetupEnvSDFLogFile
+"sdf.log" vicSetupEnvSDFConfigFile "" vicSetupEnvSDFModuleInst ""
+vicSetupEnvSDFScope "" vicSetupEnvSdf2SdfOutputFileName "" vicSetupEnvSuppressCellTypeCheck
+t vicSetupEnvSuppressWarnMessage nil vicSetupEnvBackAnnotateMultipleSDF nil
+vicSetupEnvSDFFileName "" vicSetupEnvSuppressSdf2Sdf nil
+)
+
+;NC SDF Options
+;Suppress sdf2sdf3 Running
+simNCVerilogSuppressSdf2Sdf = 'nil
+
+;Suppress sdf2sdf3 Warning Message
+simNCVerilogSuppressWarnMessage = 'nil
+
+;Suppress SDF CellType Checking
+simNCVerilogSuppressCellTypeCheck = t
+
+;Delay File
+simNCVerilogSDFFileName = ""
+
+;sdf2sdf File
+simNCVerilogSdf2SdfOutputFileName = ""
+
+;SDF Scope
+simNCVerilogSDFScope = ""
+
+;SDF Module Instance
+simNCVerilogSDFModuleInst = ""
+
+;Delay Config File
+simNCVerilogSDFConfigFile = ""
+
+;Use Delay Type
+simNCVerilogSDFDelayType = "Tool Control"
+
+;Scale Source Delay
+simNCVerilogSDFScaleType = "Min_Typ_Max"
+
+;Scale Factor        From Config
+simNCVerilogSDFScaleFactorConfig = 'nil
+
+;Minimum
+simNCVerilogSDFScaleMin = 1.0
+
+;Typical
+simNCVerilogSDFScaleTyp = 1.0
+
+;Maximum
+simNCVerilogSDFScaleMax = 1.0
+
+;Log File
+simNCVerilogSDFLogFile = "sdf.log"
+
+;Simulation Options
+;Exit After
+simNCVerilogStepComp = 'nil
+
+;Exit After
+simNCVerilogStepElab = 'nil
+
+;Read
+simNCVerilogReadAccess = t
+
+;Write
+simNCVerilogWriteAccess = 'nil
+
+;Connectivity
+simNCVerilogConnectAccess = 'nil
+
+;Enable Line Debugging
+simNCVerilogLineDebug = 'nil
+
+;Mode
+simNCVerilogDelayMode = "Path"
+
+;Type
+simNCVerilogDelayType = "Typical"
+
+;SDF Command File:
+simNCVerilogSDFDFile = ""
+
+;Enable Timing Check
+simNCVerilogEnableTimingCheck = t
+
+;Allow Negative Values
+simNCVerilogTimingNeg = t
+
+;Ignore Notifiers
+simNCVerilogTimingNot = t
+
+;Use Pulse Control Parameters
+simNCVerilogPulseCtlError = 100
+
+;Use Pulse Control Parameters
+simNCVerilogPulseCtlReject = 100
+
+;Use Pulse Control Parameters
+simNCVerilogPulseCtlSpecparam = 'nil
+
+;Suppress Warnings
+simNCVerilogSupWarn = t
+
+;Options File
+simNCVerilogOptFile = ""
+
+;NC-Verilog Executable
+simNCVerilogSimBinary = ""
+
+;Files
+simNCVerilogLibFile = ""
+
+;Directories
+simNCVerilogLibDir = ""
+
+;Pack Reference Library 
+simNCVerilogPackButton = 'nil
+
+;Pack Reference Library In Dir
+simNCVerilogPackLib = ""
+
+;Simulation Log File
+simNCVerilogLogFile = "simout.tmp"
+
+;NC Sim Compare Options
+;Golden Database File
+simNCVerilogVCompGoldenDbPath = ""
+
+;Compare Database File
+simNCVerilogVCompCompareDbPath = ""
+
+;Start Time
+simNCVerilogVCompStartTime = 0
+
+;Finish Time
+simNCVerilogVCompFinishTime = 100
+
+;Time Unit
+simNCVerilogVCompCwinTimeUinit = "ns"
+
+;Time Unit
+simNCVerilogVCompTolTimeUinit = "ns"
+
+;Time Unit
+simNCVerilogVCompSetupHoldTimeUnit = "ns"
+
+;Positive Tolerance
+simNCVerilogVCompPosTol = 2
+
+;Negative Tolerance
+simNCVerilogVCompNegTol = 2
+
+;Clock Signal To Use
+simNCVerilogVCompClkDef = ""
+
+;Sample Time Unit Offset
+simNCVerilogVCompClkSample = 0
+
+;Clock Setup Time
+simNCVerilogVCompClkSetupTime = 0
+
+;Clock Hold Time
+simNCVerilogVCompClkHoldTime = 0
+
+;Active Clock Edge For Sampling
+simNCVerilogVCompClkEdge = "Positive"
+
+;Rule File
+simNCVerilogVCompScriptFile = "compareScan.rule"
+
+;Max. Mismatches
+simNCVerilogVCompMaxCompareMismatches = 200
+
+;Path to Database
+simNCVerilogVCompCompareResultsDirPath = "/filespace/people/s/srick/Desktop/shifter_testing/shifter_testing/Shifter_32b.run1"
+
+;Difference Database
+simNCVerilogVCompCompareResultsDirName = "diff.db.out"
+
+;Report Verbosity Level
+simNCVerilogVCompVerboseCyclic = "Summary"
+
+;Text File
+simNCVerilogVCompTextRepString = "compareScan.out"
+
+;This variable does not have a prompt
+simNCVerilogVCompScriptFileUsageCyclic = "Save Options to"
+
+;This variable does not have a prompt
+simNCVerilogVCompCompWindowButton = t
+
+;This variable does not have a prompt
+simNCVerilogVCompClockButton = 'nil
+
+;This variable does not have a prompt
+simNCVerilogVCompGenTextRepButton = t
+
+;This variable does not have a prompt
+simNCVerilogVCompShowInWaveformButton = t
+
+;This variable does not have a prompt
+simNCVerilogVCompMaxMismatchesButton = t
+
+;Record Signals Options
+;Trace
+simNCVerilogTraceMode = " -all "
+
+;Trace these signals
+simNCVerilogTraceSigList = ""
+
+;In the Scope
+simNCVerilogScope = "test"
+
+;Depth mode
+simNCVerilogScopeRadio = " "
+
+;Depth value
+simNCVerilogDepth = 1
+
+;Cross Selection Options
+;Cross Selection from Composer to SimVision
+simNCVerilogCompToSyn = 'nil
+
+;Cross Selection from SimVision to Composer
+simNCVerilogSynToComp = 'nil
+

@@ -1,0 +1,28 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+
+reg  left_right, shift_en;
+
+wire [31:0]  Z;
+
+reg [31:0]  B;
+reg [4:0]  A;
+
+// Buses in the design
+
+wire  [0:31]  net42;
+
+wire  [0:31]  net37;
+
+wire  [0:31]  net32;
+
+wire  [0:31]  net22;
+
+
+
+Shifter_32b top(Z, A, B, left_right, shift_en); 
+ 

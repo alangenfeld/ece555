@@ -1,0 +1,24 @@
+// Library - shifter_testing, Cell - AND, View - schematic
+// LAST TIME SAVED: Dec  3 16:23:08 2010
+// NETLIST TIME: Dec  3 16:53:43 2010
+`timescale 1ns / 1ns 
+
+module AND ( C, A, B );
+output  C;
+
+input  A, B;
+
+
+specify 
+    specparam CDS_LIBNAME  = "shifter_testing";
+    specparam CDS_CELLNAME = "AND";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+nmos4 N1 ( cds_globals.gnd_, net040, B, cds_globals.gnd_);
+nmos4 N0 ( cds_globals.gnd_, net19, A, net040);
+pmos4 P1 ( cds_globals.vdd_, net19, B, cds_globals.vdd_);
+pmos4 P0 ( cds_globals.vdd_, net19, A, cds_globals.vdd_);
+INV I2 ( C, net19);
+
+endmodule

@@ -1,0 +1,11 @@
+CADENCE IHNL01079
+
+shifter_testing INV schematic cds0
+shifter_testing lr_1b schematic cds1
+shifter_testing Shifter_8_32 schematic cds2
+shifter_testing AND schematic cds3
+shifter_testing Shifter_1_32 schematic cds4
+shifter_testing Shifter_2_32 schematic cds5
+shifter_testing Shifter_4_32 schematic cds6
+shifter_testing Shifter_16_32 schematic cds7
+shifter_testing Shifter_32b schematic cds8

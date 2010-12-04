@@ -1,0 +1,39 @@
+// Verilog HDL and netlist files of
+// "shifter_testing Shifter_32b schematic"
+
+// HDL models
+
+// HDL file - NCSU_Analog_Parts, pmos4, functional.
+/afs/engr.wisc.edu/apps/cadence-2008/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/pmos4/functional/verilog.v
+// HDL file - NCSU_Analog_Parts, nmos4, functional.
+/afs/engr.wisc.edu/apps/cadence-2008/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/nmos4/functional/verilog.v
+
+// End HDL models
+
+// Netlisted models
+
+// netlist file - shifter_testing, INV, schematic.
+ihnl/cds0/netlist
+// netlist file - shifter_testing, lr_1b, schematic.
+ihnl/cds1/netlist
+// netlist file - shifter_testing, Shifter_8_32, schematic.
+ihnl/cds2/netlist
+// netlist file - shifter_testing, AND, schematic.
+ihnl/cds3/netlist
+// netlist file - shifter_testing, Shifter_1_32, schematic.
+ihnl/cds4/netlist
+// netlist file - shifter_testing, Shifter_2_32, schematic.
+ihnl/cds5/netlist
+// netlist file - shifter_testing, Shifter_4_32, schematic.
+ihnl/cds6/netlist
+// netlist file - shifter_testing, Shifter_16_32, schematic.
+ihnl/cds7/netlist
+// netlist file - shifter_testing, Shifter_32b, schematic.
+ihnl/cds8/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

@@ -1,0 +1,95 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "behavioral functional system verilog pld_verilog lai_verilog lmsi_verilog schematic symbol"
+  stopList "verilog pld_verilog lai_verilog lmsi_verilog symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "OUT" 31 0  "OUT" 31 0  )
+( "IN" 31 0  "IN" 31 0  )
+ )
+( net
+( "IN<8>" "IN[8]" )
+( "OUT<0>" "OUT[0]" )
+( "OUT<6>" "OUT[6]" )
+( "OUT<20>" "OUT[20]" )
+( "IN<6>" "IN[6]" )
+( "IN<30>" "IN[30]" )
+( "OUT<16>" "OUT[16]" )
+( "OUT<29>" "OUT[29]" )
+( "OUT<30>" "OUT[30]" )
+( "OUT<28>" "OUT[28]" )
+( "OUT<18>" "OUT[18]" )
+( "OUT<31>" "OUT[31]" )
+( "IN<13>" "IN[13]" )
+( "OUT<17>" "OUT[17]" )
+( "OUT<26>" "OUT[26]" )
+( "OUT<11>" "OUT[11]" )
+( "IN<14>" "IN[14]" )
+( "IN<15>" "IN[15]" )
+( "IN<23>" "IN[23]" )
+( "IN<11>" "IN[11]" )
+( "OUT<22>" "OUT[22]" )
+( "IN<21>" "IN[21]" )
+( "OUT<8>" "OUT[8]" )
+( "OUT<14>" "OUT[14]" )
+( "IN<19>" "IN[19]" )
+( "IN<10>" "IN[10]" )
+( "IN<20>" "IN[20]" )
+( "OUT<19>" "OUT[19]" )
+( "IN<26>" "IN[26]" )
+( "OUT<5>" "OUT[5]" )
+( "IN<31>" "IN[31]" )
+( "IN<16>" "IN[16]" )
+( "IN<5>" "IN[5]" )
+( "IN<22>" "IN[22]" )
+( "IN<29>" "IN[29]" )
+( "OUT<25>" "OUT[25]" )
+( "OUT<7>" "OUT[7]" )
+( "IN<17>" "IN[17]" )
+( "OUT<2>" "OUT[2]" )
+( "OUT<4>" "OUT[4]" )
+( "OUT<15>" "OUT[15]" )
+( "OUT<9>" "OUT[9]" )
+( "OUT<27>" "OUT[27]" )
+( "IN<4>" "IN[4]" )
+( "IN<24>" "IN[24]" )
+( "IN<25>" "IN[25]" )
+( "gnd!" "cds_globals.gnd_" )
+( "IN<9>" "IN[9]" )
+( "IN<12>" "IN[12]" )
+( "OUT<23>" "OUT[23]" )
+( "IN<3>" "IN[3]" )
+( "IN<27>" "IN[27]" )
+( "OUT<10>" "OUT[10]" )
+( "IN<1>" "IN[1]" )
+( "IN<18>" "IN[18]" )
+( "OUT<13>" "OUT[13]" )
+( "OUT<24>" "OUT[24]" )
+( "OUT<21>" "OUT[21]" )
+( "OUT<1>" "OUT[1]" )
+( "IN<0>" "IN[0]" )
+( "OUT<3>" "OUT[3]" )
+( "IN<7>" "IN[7]" )
+( "IN<2>" "IN[2]" )
+( "IN<28>" "IN[28]" )
+( "OUT<12>" "OUT[12]" )
+ )
+( inst
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+( "lr_1b" "lr_1b" )
+ )

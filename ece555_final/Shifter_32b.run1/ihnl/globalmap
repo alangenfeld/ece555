@@ -1,0 +1,18 @@
+CADENCE IHNL01070
+$model
+shifter_testing/Shifter_1_32/schematic Shifter_1_32
+shifter_testing/INV/schematic INV
+shifter_testing/Shifter_32b/schematic Shifter_32b
+shifter_testing/Shifter_4_32/schematic Shifter_4_32
+shifter_testing/Shifter_2_32/schematic Shifter_2_32
+shifter_testing/Shifter_8_32/schematic Shifter_8_32
+shifter_testing/Shifter_16_32/schematic Shifter_16_32
+shifter_testing/lr_1b/schematic lr_1b
+shifter_testing/AND/schematic AND
+$endmodel
+$net
+vdd! cds_globals.vdd_
+gnd! cds_globals.gnd_
+$endnet
+$param
+$endparam
