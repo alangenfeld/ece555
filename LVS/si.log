@@ -3,7 +3,7 @@ Running simulation in directory: "/filespace/people/j/jnystrom/ece555/LVS".
 
 
 
-Begin netlist:    Dec  2 23:54:55 2010
+Begin netlist:    Dec  3 22:15:51 2010
 	view name list	= ("auLvs" "extracted" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "ece555_final"
@@ -12,19 +12,19 @@ Begin netlist:    Dec  2 23:54:55 2010
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    Dec  2 23:54:55 2010
+End netlist:    Dec  3 22:15:52 2010
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
 	presistors removed:  0
-	pcapacitors removed: 138
+	pcapacitors removed: 140
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
 	30 nodes merged into 30 nodes
 
 
-Begin netlist:    Dec  2 23:54:55 2010
+Begin netlist:    Dec  3 22:15:52 2010
 	view name list	= ("auLvs" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "ece555_final"
@@ -32,7 +32,7 @@ Begin netlist:    Dec  2 23:54:55 2010
 	view name	= "schematic"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
-End netlist:    Dec  2 23:54:56 2010
+End netlist:    Dec  3 22:15:52 2010
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -44,7 +44,7 @@ Removing parasitic components from netlist
 	39 nodes merged into 39 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    Dec  2 23:54:56 2010
+Begin comparison:    Dec  3 22:15:52 2010
 @(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
 
 The net-lists match.
@@ -70,7 +70,7 @@ The net-lists match.
 	matched but
 	different type		0	0
 	total			11	11
-End comparison:      Dec  2 23:54:56 2010
+End comparison:      Dec  3 22:15:52 2010
 
 
 Comparison program completed successfully.
