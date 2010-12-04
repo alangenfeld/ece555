@@ -8,31 +8,29 @@ Compiling Diva LVS rules...
 
     Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/layout/netlist
        count
-	30		nets
-	11		terminals
-	19		pmos
-	19		nmos
+	22		nets
+	9		terminals
+	16		pmos
+	15		nmos
 
     Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/schematic/netlist
        count
-	30		nets
-	11		terminals
-	19		pmos
-	19		nmos
+	22		nets
+	9		terminals
+	15		pmos
+	15		nmos
 
 
     Terminal correspondence points
-    N24       N5        A
-    N23       N11       B
-    N21       N3        Z
-    N27       N15       clk
-    N20       N0        gnd!
-    N29       N4        rd_enA
-    N26       N14       rd_enA_n
-    N28       N12       rd_enB
-    N19       N9        rd_enB_n
-    N25       N1        vdd!
-    N22       N16       wr_en
+    N18       N2        A
+    N17       N3        B
+    N20       N4        Cin
+    N21       N5        Cout
+    N14       N6        Z
+    N16       N7        add_en
+    N15       N9        add_en_n
+    N13       N0        gnd!
+    N19       N1        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
@@ -47,21 +45,21 @@ The net-lists match.
 	rewired			0	0
 	size errors		0	0
 	pruned			0	0
-	active			38	38
-	total			38	38
+	active			31	30
+	total			31	30
 
 				  nets
 	un-matched		0	0
 	merged			0	0
 	pruned			0	0
-	active			30	30
-	total			30	30
+	active			22	22
+	total			22	22
 
 				terminals
 	un-matched		0	0
 	matched but
 	different type		0	0
-	total			11	11
+	total			9	9
 
 
 Probe files from /filespace/people/j/jnystrom/ece555/LVS/schematic

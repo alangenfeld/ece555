@@ -3,36 +3,36 @@ Running simulation in directory: "/filespace/people/j/jnystrom/ece555/LVS".
 
 
 
-Begin netlist:    Dec  3 22:15:51 2010
+Begin netlist:    Dec  4 12:27:18 2010
 	view name list	= ("auLvs" "extracted" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "ece555_final"
-	cell name	= "reg_file_bit_slice"
+	cell name	= "adder_en"
 	view name	= "extracted"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    Dec  3 22:15:52 2010
+End netlist:    Dec  4 12:27:19 2010
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
 	presistors removed:  0
-	pcapacitors removed: 140
+	pcapacitors removed: 99
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	30 nodes merged into 30 nodes
+	22 nodes merged into 22 nodes
 
 
-Begin netlist:    Dec  3 22:15:52 2010
+Begin netlist:    Dec  4 12:27:19 2010
 	view name list	= ("auLvs" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "ece555_final"
-	cell name	= "reg_file_bit_slice"
+	cell name	= "adder_en"
 	view name	= "schematic"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
-End netlist:    Dec  3 22:15:52 2010
+End netlist:    Dec  4 12:27:19 2010
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -41,10 +41,10 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	39 nodes merged into 39 nodes
+	29 nodes merged into 29 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    Dec  3 22:15:52 2010
+Begin comparison:    Dec  4 12:27:19 2010
 @(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
 
 The net-lists match.
@@ -55,22 +55,22 @@ The net-lists match.
 	rewired			0	0
 	size errors		0	0
 	pruned			0	0
-	active			38	38
-	total			38	38
+	active			31	30
+	total			31	30
 
 				  nets
 	un-matched		0	0
 	merged			0	0
 	pruned			0	0
-	active			30	30
-	total			30	30
+	active			22	22
+	total			22	22
 
 				terminals
 	un-matched		0	0
 	matched but
 	different type		0	0
-	total			11	11
-End comparison:      Dec  3 22:15:52 2010
+	total			9	9
+End comparison:      Dec  4 12:27:20 2010
 
 
 Comparison program completed successfully.
