@@ -1,0 +1,17 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial
+begin 
+
+   A[4:0] = 5'b00000;
+
+   B[31:0] = 32'b00000000000000000000000000000000;
+
+   left_right = 1'b0;
+   shift_en = 1'b0;
+end 

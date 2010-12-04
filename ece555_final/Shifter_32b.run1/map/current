@@ -1,0 +1,54 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Shifter_32b"
+  repList "behavioral functional system verilog pld_verilog lai_verilog lmsi_verilog schematic symbol"
+  stopList "verilog pld_verilog lai_verilog lmsi_verilog symbol"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/filespace/people/s/srick/Desktop/shifter_testing/shifter_testing/Shifter_32b.run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+( "IN" 31 0  "IN" 31 0  )
+( "OUT" 31 0  "OUT" 31 0  )
+ )
+( net
+ )
+( inst
+ )
+( model
+( "shifter_testing/Shifter_32b/schematic" "Shifter_32b" )
+( "shifter_testing/lr_1b/schematic" "lr_1b" )
+( "shifter_testing/Shifter_4_32/schematic" "Shifter_4_32" )
+( "shifter_testing/Shifter_16_32/schematic" "Shifter_16_32" )
+( "shifter_testing/AND/schematic" "AND" )
+( "shifter_testing/Shifter_2_32/schematic" "Shifter_2_32" )
+( "gnd!" "cds_globals.gnd_" )
+( "shifter_testing/Shifter_8_32/schematic" "Shifter_8_32" )
+( "shifter_testing/INV/schematic" "INV" )
+( "shifter_testing/Shifter_1_32/schematic" "Shifter_1_32" )
+( "vdd!" "cds_globals.vdd_" )
+ )
+( term
+ )
+( param
+ )
+( "Shifter_16_32" "ihnl/cds7/map" )
+( "lr_1b" "ihnl/cds1/map" )
+( "Shifter_32b" "ihnl/cds8/map" )
+( "Shifter_8_32" "ihnl/cds2/map" )
+( "Shifter_2_32" "ihnl/cds5/map" )
+( "Shifter_4_32" "ihnl/cds6/map" )
+( "AND" "ihnl/cds3/map" )
+( "INV" "ihnl/cds0/map" )
+( "Shifter_1_32" "ihnl/cds4/map" )
+ )

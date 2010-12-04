@@ -1,0 +1,15 @@
+(pinMapTop
+   mapFileList (
+      ("shifter_testing/INV/schematic" "pinMap.1")
+      ("shifter_testing/lr_1b/schematic" "pinMap.2")
+      ("shifter_testing/Shifter_8_32/schematic" "pinMap.3")
+      ("shifter_testing/AND/schematic" "pinMap.4")
+      ("shifter_testing/Shifter_1_32/schematic" "pinMap.5")
+      ("shifter_testing/Shifter_2_32/schematic" "pinMap.6")
+      ("shifter_testing/Shifter_4_32/schematic" "pinMap.7")
+      ("shifter_testing/Shifter_16_32/schematic" "pinMap.8")
+      ("shifter_testing/Shifter_32b/schematic" "pinMap.9")
+  )
+  topCell ("shifter_testing/Shifter_32b/schematic" "pinMap.9")
+  nextFileIndex 10
+)
