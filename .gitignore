@@ -7,4 +7,4 @@ libManager.*
 verilog/INCA*
 verilog/.sim*
 libManager.log
-LVS
+LVS/*
