@@ -3,36 +3,36 @@ Running simulation in directory: "/filespace/people/a/alangenf/ece555/LVS".
 
 
 
-Begin netlist:    Dec  4 18:17:33 2010
+Begin netlist:    Dec  5 17:23:04 2010
 	view name list	= ("auLvs" "extracted" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "ece555_final"
-	cell name	= "counter"
+	cell name	= "fsm_state"
 	view name	= "extracted"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    Dec  4 18:17:34 2010
+End netlist:    Dec  5 17:23:04 2010
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
 	presistors removed:  0
-	pcapacitors removed: 868
+	pcapacitors removed: 590
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	184 nodes merged into 184 nodes
+	95 nodes merged into 95 nodes
 
 
-Begin netlist:    Dec  4 18:17:34 2010
+Begin netlist:    Dec  5 17:23:04 2010
 	view name list	= ("auLvs" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "ece555_final"
-	cell name	= "counter"
+	cell name	= "fsm_state"
 	view name	= "schematic"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
-End netlist:    Dec  4 18:17:35 2010
+End netlist:    Dec  5 17:23:04 2010
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -41,36 +41,38 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	252 nodes merged into 252 nodes
+	153 nodes merged into 153 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    Dec  4 18:17:35 2010
+Begin comparison:    Dec  5 17:23:04 2010
 @(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
 
-The net-lists match.
+1 net-list ambiguity was resolved by random selection.
+
+The net-lists failed to match.
 
 			     layout  schematic
 				instances
-	un-matched		0	0
+	un-matched		2	2
 	rewired			0	0
 	size errors		0	0
 	pruned			0	0
-	active			342	336
-	total			342	336
+	active			140	140
+	total			140	140
 
 				  nets
 	un-matched		0	0
-	merged			0	0
+	merged			3	0
 	pruned			0	0
-	active			184	184
-	total			184	184
+	active			90	87
+	total			90	87
 
 				terminals
 	un-matched		0	0
 	matched but
 	different type		0	0
-	total			10	10
-End comparison:      Dec  4 18:17:36 2010
+	total			16	16
+End comparison:      Dec  5 17:23:06 2010
 
 
 Comparison program completed successfully.

@@ -8,64 +8,76 @@ Compiling Diva LVS rules...
 
     Net-list summary for /filespace/people/a/alangenf/ece555/LVS/layout/netlist
        count
-	184		nets
-	10		terminals
-	174		pmos
-	168		nmos
+	90		nets
+	16		terminals
+	70		pmos
+	70		nmos
 
     Net-list summary for /filespace/people/a/alangenf/ece555/LVS/schematic/netlist
        count
-	184		nets
-	10		terminals
-	168		pmos
-	168		nmos
+	87		nets
+	16		terminals
+	70		pmos
+	70		nmos
 
 
     Terminal correspondence points
-    N178      N3        Q<0>
-    N177      N4        Q<1>
-    N176      N5        Q<2>
-    N174      N6        Q<3>
-    N183      N7        Q<4>
-    N182      N8        Q<5>
-    N181      N2        clk
-    N179      N12       en
-    N175      N1        gnd!
-    N180      N0        vdd!
+    N88       N4        clk
+    N79       N9        cnt<0>
+    N93       N14       cnt<1>
+    N92       N27       cnt<2>
+    N90       N13       cnt<3>
+    N87       N3        cnt<4>
+    N86       N29       cnt<5>
+    N81       N11       done
+    N80       N1        gnd!
+    N91       N20       next_state<0>
+    N89       N5        next_state<1>
+    N82       N8        rst
+    N94       N19       start
+    N84       N26       state<0>
+    N83       N23       state<1>
+    N85       N0        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
 
-The net-lists match.
+1 net-list ambiguity was resolved by random selection.
+
+The net-lists failed to match.
 
 			     layout  schematic
 				instances
-	un-matched		0	0
+	un-matched		2	2
 	rewired			0	0
 	size errors		0	0
 	pruned			0	0
-	active			342	336
-	total			342	336
+	active			140	140
+	total			140	140
 
 				  nets
 	un-matched		0	0
-	merged			0	0
+	merged			3	0
 	pruned			0	0
-	active			184	184
-	total			184	184
+	active			90	87
+	total			90	87
 
 				terminals
 	un-matched		0	0
 	matched but
 	different type		0	0
-	total			10	10
+	total			16	16
 
 
 Probe files from /filespace/people/a/alangenf/ece555/LVS/schematic
 
 devbad.out:
+I /I154/P20
+? Device does not cross-match.
+I /I154/N5
+? Device does not cross-match.
 
 netbad.out:
 
@@ -83,10 +95,20 @@ audit.out:
 Probe files from /filespace/people/a/alangenf/ece555/LVS/layout
 
 devbad.out:
+I /+115
+? Device does not cross-match.
+I /+45
+? Device does not cross-match.
 
 netbad.out:
 
 mergenet.out:
+N /20
+? Net /20 merged with /75
+N /90
+? Net /90 merged with /41
+N /32
+? Net /32 merged with /89
 
 termbad.out:
 
