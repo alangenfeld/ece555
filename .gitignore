@@ -8,3 +8,5 @@ verilog/INCA*
 verilog/.sim*
 libManager.log
 LVS/*
+.nfs*
+*.log
