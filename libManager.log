@@ -1,13 +1,13 @@
 \o Program:		@(#)$CDS: libManagerOA.exe version 6.1.1 01/10/2007 08:46 (cat61lnx) $
 \o Sub version:		sub-version 06.03-p001
-\o Arguments:		-mpssession virtuoso20081 -mpshost tux-48 
-\o Working Directory:	tux-48:/filespace/people/j/jnystrom/ece555
+\o Arguments:		-mpssession virtuoso30032 -mpshost tux-47 
+\o Working Directory:	tux-47:/filespace/people/a/alangenf/ece555
 \o Qt version: 		4.1.4
-\o Log file is "/filespace/people/j/jnystrom/ece555/libManager.log".
+\o Log file is "/filespace/people/a/alangenf/ece555/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(0 25 1272 948))
-\o changeWorkingDir("/filespace/people/j/jnystrom/ece555")
+\o changeWorkingDir("/filespace/people/a/alangenf/ece555")
 \o MPS request: update library list
 \o ddSetForcedLib("")
 \o MPS service: map window
@@ -15,17 +15,13 @@
 \a cdsLibManager->libListBox->value = "ece555_final"
 \a cdsLibManager->libListBox->value = "ece555_final"
 \a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "1b_shifter"
-\a cdsLibManager->cellListBox->value = "Shifter_1_32"
-\a cdsLibManager->cellListBox->value = "Shifter_2_32"
-\a cdsLibManager->cellListBox->value = "Shifter_4_32"
-\a cdsLibManager->cellListBox->value = "1b_shifter"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
-\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->cellListBox->value = "fsm"
+\a nrListItemAction(cdsLibManager->cellListBox 20 0)
+\a cdsLibManager->cellLineEdit->value = "fsm"
+\a cdsLibManager->viewListBox->value = "layout"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->viewListBox 2 0)
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
@@ -34,10 +30,21 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = "ece555_final"
 \a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
+\a cdsLibManager->cellListBox->value = "fsm"
+\a cdsLibManager->cellLineEdit->value = "fsm"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewListBox->value = nil
@@ -46,138 +53,135 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = "ece555_final"
 \a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
+\a cdsLibManager->cellListBox->value = "fsm"
+\a cdsLibManager->cellLineEdit->value = "fsm"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "bit_slice"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = "bit_slice"
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "counter"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "counter"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "fsm"
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "counter"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "ece555_final"
-\a cdsLibManager->libListBox->value = "ece555_final"
-\a cdsLibManager->cellListBox->value = "bit_slice"
-\a cdsLibManager->cellLineEdit->value = "bit_slice"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "counter"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dff"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "dff"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetWindowVisibility(cdsLibManager "hide")
-\o libManager is exiting.
-\a exit(0)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")

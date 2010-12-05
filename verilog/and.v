@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - and, View - schematic
 // LAST TIME SAVED: Nov 29 17:43:24 2010
-// NETLIST TIME: Nov 29 23:50:06 2010
+// NETLIST TIME: Dec  4 18:19:31 2010
 `timescale 1ns / 1ns 
 
 module and_ ( O, A, B );

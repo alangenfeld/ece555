@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - dff, View - schematic
 // LAST TIME SAVED: Dec  2 19:44:38 2010
-// NETLIST TIME: Dec  2 19:45:32 2010
+// NETLIST TIME: Dec  4 18:19:30 2010
 `timescale 1ns / 1ns 
 
 module dff ( Q, CLK, D );

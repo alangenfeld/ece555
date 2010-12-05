@@ -1,36 +1,37 @@
 @(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
 
-Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/j/jnystrom/ece555/LVS -l -s -t /filespace/people/j/jnystrom/ece555/LVS/layout /filespace/people/j/jnystrom/ece555/LVS/schematic
+Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/a/alangenf/ece555/LVS -l -s -t /filespace/people/a/alangenf/ece555/LVS/layout /filespace/people/a/alangenf/ece555/LVS/schematic
 Like matching is enabled.
 Net swapping is enabled.
 Using terminal names as correspondence points.
 Compiling Diva LVS rules...
 
-    Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/layout/netlist
+    Net-list summary for /filespace/people/a/alangenf/ece555/LVS/layout/netlist
        count
-	22		nets
-	9		terminals
-	16		pmos
-	15		nmos
+	184		nets
+	10		terminals
+	174		pmos
+	168		nmos
 
-    Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/schematic/netlist
+    Net-list summary for /filespace/people/a/alangenf/ece555/LVS/schematic/netlist
        count
-	22		nets
-	9		terminals
-	15		pmos
-	15		nmos
+	184		nets
+	10		terminals
+	168		pmos
+	168		nmos
 
 
     Terminal correspondence points
-    N18       N2        A
-    N17       N3        B
-    N20       N4        Cin
-    N21       N5        Cout
-    N14       N6        Z
-    N16       N7        add_en
-    N15       N9        add_en_n
-    N13       N0        gnd!
-    N19       N1        vdd!
+    N178      N3        Q<0>
+    N177      N4        Q<1>
+    N176      N5        Q<2>
+    N174      N6        Q<3>
+    N183      N7        Q<4>
+    N182      N8        Q<5>
+    N181      N2        clk
+    N179      N12       en
+    N175      N1        gnd!
+    N180      N0        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
@@ -45,24 +46,24 @@ The net-lists match.
 	rewired			0	0
 	size errors		0	0
 	pruned			0	0
-	active			31	30
-	total			31	30
+	active			342	336
+	total			342	336
 
 				  nets
 	un-matched		0	0
 	merged			0	0
 	pruned			0	0
-	active			22	22
-	total			22	22
+	active			184	184
+	total			184	184
 
 				terminals
 	un-matched		0	0
 	matched but
 	different type		0	0
-	total			9	9
+	total			10	10
 
 
-Probe files from /filespace/people/j/jnystrom/ece555/LVS/schematic
+Probe files from /filespace/people/a/alangenf/ece555/LVS/schematic
 
 devbad.out:
 
@@ -79,7 +80,7 @@ prunedev.out:
 audit.out:
 
 
-Probe files from /filespace/people/j/jnystrom/ece555/LVS/layout
+Probe files from /filespace/people/a/alangenf/ece555/LVS/layout
 
 devbad.out:
 
