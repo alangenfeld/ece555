@@ -1,38 +1,38 @@
 
-Running simulation in directory: "/filespace/people/a/alangenf/ece555/LVS".
+Running simulation in directory: "/filespace/people/j/jnystrom/ece555/LVS".
 
 
 
-Begin netlist:    Dec  5 17:23:04 2010
+Begin netlist:    Dec  5 19:09:47 2010
 	view name list	= ("auLvs" "extracted" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "ece555_final"
-	cell name	= "fsm_state"
+	cell name	= "fsm_count"
 	view name	= "extracted"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    Dec  5 17:23:04 2010
+End netlist:    Dec  5 19:09:48 2010
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
 	presistors removed:  0
-	pcapacitors removed: 590
+	pcapacitors removed: 905
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	95 nodes merged into 95 nodes
+	195 nodes merged into 195 nodes
 
 
-Begin netlist:    Dec  5 17:23:04 2010
+Begin netlist:    Dec  5 19:09:48 2010
 	view name list	= ("auLvs" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "ece555_final"
-	cell name	= "fsm_state"
+	cell name	= "fsm_count"
 	view name	= "schematic"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
-End netlist:    Dec  5 17:23:04 2010
+End netlist:    Dec  5 19:09:48 2010
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -41,38 +41,36 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	153 nodes merged into 153 nodes
+	280 nodes merged into 280 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    Dec  5 17:23:04 2010
+Begin comparison:    Dec  5 19:09:48 2010
 @(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
 
-1 net-list ambiguity was resolved by random selection.
-
-The net-lists failed to match.
+The net-lists match.
 
 			     layout  schematic
 				instances
-	un-matched		2	2
+	un-matched		0	0
 	rewired			0	0
 	size errors		0	0
 	pruned			0	0
-	active			140	140
-	total			140	140
+	active			358	352
+	total			358	352
 
 				  nets
 	un-matched		0	0
-	merged			3	0
+	merged			0	0
 	pruned			0	0
-	active			90	87
-	total			90	87
+	active			195	195
+	total			195	195
 
 				terminals
 	un-matched		0	0
 	matched but
 	different type		0	0
-	total			16	16
-End comparison:      Dec  5 17:23:06 2010
+	total			13	13
+End comparison:      Dec  5 19:09:49 2010
 
 
 Comparison program completed successfully.
