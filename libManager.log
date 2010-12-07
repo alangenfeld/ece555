@@ -228,3 +228,257 @@
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_count"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_count"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_num"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_num"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_output"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_output"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_shift"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_shift"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_state"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_state"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "fsm_state"
+\a cdsLibManager->cellLineEdit->value = "fsm_state"
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_state"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_state"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 0 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_state"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_state"
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "fsm2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
+\a cdsLibManager->cellLineEdit->value = "fsm2"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_shift"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_shift"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "multiplier_final"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "multiplier_final"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dff_en"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "dff_en"
+\a cdsLibManager->libListBox->value = "cdsDefTechLib"
+\a cdsLibManager->libListBox->value = "cdsDefTechLib"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->libListBox->value = "ece555_final"
+\a cdsLibManager->libLineEdit->value = "ece555_final"
+\a cdsLibManager->cellListBox->value = "and"
+\a cdsLibManager->cellListBox->value = "nand"
+\a cdsLibManager->cellListBox->value = "Shifter_32b"
+\a cdsLibManager->cellLineEdit->value = "Shifter_32b"
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fsm_shift"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "fsm_shift"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 2 0)
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->viewListBox 1 0)
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
