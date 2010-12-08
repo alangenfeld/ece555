@@ -1,40 +1,41 @@
 // Library - ece555_final, Cell - top_view, View - schematic
-// LAST TIME SAVED: Dec  7 20:06:09 2010
-// NETLIST TIME: Dec  7 20:06:52 2010
+// LAST TIME SAVED: Dec  7 20:45:20 2010
+// NETLIST TIME: Dec  7 20:45:40 2010
 `timescale 1ns / 1ns 
 
 module top_view ( A, B, done, Z, clk, rst, start );
 
 output  done;
 
+
 input  clk, rst, start;
 
 output [31:0]  A;
 output [31:0]  B;
 
-input [31:0]  Z;
+inout [31:0]  Z;
 
 // Buses in the design
 
-wire  [4:0]  rd_enA;
+wire  [4:0]  rd_enB;
 
 wire  [4:0]  rd_enA_n;
 
-wire  [4:0]  rd_enB;
-
 wire  [4:0]  rd_enB_n;
+
+wire  [4:0]  rd_enA;
 
 wire  [4:0]  wr_en;
 
 // List of all aliases
 
 
-cds_alias cds_alias_inst1(rd_enA[1], 0);
-cds_alias cds_alias_inst2(rd_enB_n[4], 0);
-cds_alias cds_alias_inst3(rd_enB_n[2], 0);
+cds_alias cds_alias_inst1(rd_enB_n[4], 1);
+cds_alias cds_alias_inst2(rd_enB_n[2], 1);
+cds_alias cds_alias_inst3(rd_enA_n[1], 1);
 cds_alias cds_alias_inst4(rd_enB[4], 0);
-cds_alias cds_alias_inst5(rd_enB[2], 0);
-cds_alias cds_alias_inst6(rd_enA_n[1], 0);
+cds_alias cds_alias_inst5(rd_enA[1], 0);
+cds_alias cds_alias_inst6(rd_enB[2], 0);
 
 
 specify 
