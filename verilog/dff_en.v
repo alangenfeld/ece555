@@ -1,10 +1,9 @@
 // Library - ece555_final, Cell - dff_en, View - schematic
 // LAST TIME SAVED: Dec  4 21:06:03 2010
-// NETLIST TIME: Dec  4 21:06:36 2010
+// NETLIST TIME: Dec  7 19:22:18 2010
 `timescale 1ns / 1ns 
 
 module dff_en ( Q, D, clk, wr_en );
-
 output  Q;
 
 input  D, clk, wr_en;

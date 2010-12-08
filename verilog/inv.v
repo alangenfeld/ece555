@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - inv, View - schematic
 // LAST TIME SAVED: Nov 29 18:05:45 2010
-// NETLIST TIME: Dec  4 18:19:31 2010
+// NETLIST TIME: Dec  7 19:22:19 2010
 `timescale 1ns / 1ns 
 
 module inv ( O, A );

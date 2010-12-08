@@ -1,0 +1,4 @@
+module cds_alias(output o, input i )
+assign i =o;
+
+endmodule

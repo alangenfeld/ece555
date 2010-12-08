@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - full_add, View - schematic
 // LAST TIME SAVED: Nov 23 20:34:40 2010
-// NETLIST TIME: Dec  4 18:19:31 2010
+// NETLIST TIME: Dec  7 19:22:18 2010
 `timescale 1ns / 1ns 
 
 module full_add ( Cout, Sum, A, B, Cin );

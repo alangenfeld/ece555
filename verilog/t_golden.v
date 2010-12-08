@@ -6,7 +6,7 @@ module t_golden();
    wire [31:0] a,b;
    reg start, clk, rst, drive;
    
-   golden1 DUT(.clk(clk), .rst(rst), .start(start), .Z(z),
+   top_view DUT(.clk(clk), .rst(rst), .start(start), .Z(z),
 	       .A(a), .B(b), .done(done));
    
 
@@ -28,7 +28,7 @@ end
       // cycle 1
       start = 1;
       drive = 1;
-      drv_z = 32'h0000_0002; // multiplicand
+      drv_z = 32'h0000_7FFF; // multiplicand
       // cycle 2
       @(posedge clk);
       #1 drv_z = 32'h0000_0002; // multiplier

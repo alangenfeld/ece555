@@ -3,7 +3,7 @@ module ppgen_tb ( );
 wire t_z;
 reg t_a,t_b, t_ppgen_en, t_ppgen_en_n;
 
-pp_gen  ppgen( .Z(t_z), .A(t_a), .B(t_b), .ppgen_en(t_ppgen_en), .ppgen_en_n(t_ppgen_en_n)   );
+pp_gen  ppgen( .Z(t_z), .A(t_a), .B_0(t_b), .ppgen_en(t_ppgen_en), .ppgen_en_n(t_ppgen_en_n)   );
 
 
 initial
