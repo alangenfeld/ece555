@@ -1,0 +1,155 @@
+@(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
+
+Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/a/alangenf/ece555/LVS -l -s -t /filespace/people/a/alangenf/ece555/LVS/layout /filespace/people/a/alangenf/ece555/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /filespace/people/a/alangenf/ece555/LVS/layout/netlist
+       count
+	421		nets
+	68		terminals
+	460		pmos
+	392		nmos
+
+    Net-list summary for /filespace/people/a/alangenf/ece555/LVS/schematic/netlist
+       count
+	421		nets
+	68		terminals
+	392		pmos
+	392		nmos
+
+
+    Terminal correspondence points
+    N377      N23       A<0>
+    N371      N53       A<1>
+    N358      N47       A<2>
+    N351      N67       A<3>
+    N417      N21       A<4>
+    N419      N5        B<0>
+    N345      N38       B_zero
+    N369      N4        add_en
+    N360      N78       add_en_n
+    N382      N65       clk
+    N357      N60       done
+    N352      N0        gnd!
+    N398      N50       left1
+    N356      N75       left16
+    N399      N74       left16_n
+    N395      N70       left1_n
+    N397      N69       left2
+    N362      N25       left2_n
+    N393      N80       left4
+    N363      N44       left4_n
+    N387      N40       left8
+    N366      N27       left8_n
+    N414      N30       no_shift1
+    N353      N73       no_shift16
+    N420      N63       no_shift16_n
+    N373      N28       no_shift1_n
+    N412      N15       no_shift2
+    N404      N16       no_shift2_n
+    N411      N43       no_shift4
+    N406      N46       no_shift4_n
+    N409      N24       no_shift8
+    N408      N13       no_shift8_n
+    N380      N6        ppgen_en
+    N402      N64       ppgen_en_n
+    N381      N83       rd_enA<0>
+    N368      N12       rd_enA<2>
+    N355      N3        rd_enA<3>
+    N349      N2        rd_enA<4>
+    N410      N20       rd_enA_n<0>
+    N389      N8        rd_enA_n<2>
+    N383      N66       rd_enA_n<3>
+    N379      N82       rd_enA_n<4>
+    N350      N7        rd_enB<0>
+    N416      N36       rd_enB<1>
+    N396      N32       rd_enB<3>
+    N354      N77       rd_enB_n<0>
+    N347      N72       rd_enB_n<1>
+    N400      N79       rd_enB_n<3>
+    N374      N55       right1
+    N346      N62       right16
+    N405      N61       right16_n
+    N391      N49       right1_n
+    N372      N22       right2
+    N359      N81       right2_n
+    N370      N42       right4
+    N361      N41       right4_n
+    N367      N45       right8
+    N364      N76       right8_n
+    N365      N37       rst
+    N388      N33       shift_en
+    N384      N9        shift_en_n
+    N415      N10       start
+    N376      N1        vdd!
+    N348      N35       wr_en<0>
+    N413      N84       wr_en<1>
+    N401      N86       wr_en<2>
+    N392      N85       wr_en<3>
+    N385      N14       wr_en<4>
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			852	784
+	total			852	784
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			421	421
+	total			421	421
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			68	68
+
+
+Probe files from /filespace/people/a/alangenf/ece555/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /filespace/people/a/alangenf/ece555/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
