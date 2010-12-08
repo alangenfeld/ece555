@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - fsm_shift, View - schematic
 // LAST TIME SAVED: Dec  7 16:52:23 2010
-// NETLIST TIME: Dec  7 19:22:19 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module fsm_shift ( left, shift_en, right, cnt[1], state[1], two );

@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - fsm_state, View - schematic
 // LAST TIME SAVED: Dec  7 14:52:38 2010
-// NETLIST TIME: Dec  7 19:22:20 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module fsm_state ( done, idle, next_state[0], next_state[1], rst_n,

@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - nand, View - schematic
 // LAST TIME SAVED: Nov 29 17:44:01 2010
-// NETLIST TIME: Dec  7 19:22:19 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module nand_ ( O, A, B );

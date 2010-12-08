@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - nor, View - schematic
 // LAST TIME SAVED: Nov 30 14:51:28 2010
-// NETLIST TIME: Dec  7 19:22:19 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module nor_ ( O, A, B );

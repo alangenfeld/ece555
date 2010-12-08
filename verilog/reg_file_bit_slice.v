@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - reg_file_bit_slice, View - schematic
 // LAST TIME SAVED: Dec  2 23:44:46 2010
-// NETLIST TIME: Dec  7 19:22:18 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module reg_file_bit_slice ( A, B, Z, clk, rd_enA, rd_enA_n, rd_enB,

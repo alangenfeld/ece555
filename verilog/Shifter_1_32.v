@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - Shifter_1_32, View - schematic
-// LAST TIME SAVED: Dec  4 20:59:27 2010
-// NETLIST TIME: Dec  7 19:22:19 2010
+// LAST TIME SAVED: Dec  7 23:51:23 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module Shifter_1_32 ( OUT, IN, LEFT_NOT, L_SHIFT, NO_SHIFT, OLD_NOT,
@@ -19,69 +19,101 @@ specify
     specparam CDS_VIEWNAME = "schematic";
 endspecify
 
-lr_1b I228 ( OUT[15], IN[14], L_SHIFT, NO_SHIFT, IN[15], IN[16],
+lr_1b I228 ( OUT[15], net0494, L_SHIFT, NO_SHIFT, net0496, net530,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I227 ( OUT[14], IN[13], L_SHIFT, NO_SHIFT, IN[14], IN[15],
+lr_1b I227 ( OUT[14], net0492, L_SHIFT, NO_SHIFT, net0494, net0496,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I219 ( OUT[2], IN[1], L_SHIFT, NO_SHIFT, IN[2], IN[3], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I197 ( OUT[31], IN[30], L_SHIFT, NO_SHIFT, IN[31],
+lr_1b I219 ( OUT[2], net470, L_SHIFT, NO_SHIFT, net0470, net478,
+     R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I197 ( OUT[31], net572, L_SHIFT, NO_SHIFT, net0522,
      0, R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I198 ( OUT[30], IN[29], L_SHIFT, NO_SHIFT, IN[30], IN[31],
+lr_1b I198 ( OUT[30], net574, L_SHIFT, NO_SHIFT, net572, net0522,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I199 ( OUT[29], IN[28], L_SHIFT, NO_SHIFT, IN[29], IN[30],
+lr_1b I199 ( OUT[29], net576, L_SHIFT, NO_SHIFT, net574, net572,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I201 ( OUT[24], IN[23], L_SHIFT, NO_SHIFT, IN[24], IN[25],
+lr_1b I201 ( OUT[24], net558, L_SHIFT, NO_SHIFT, net0514, net566,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I200 ( OUT[28], IN[27], L_SHIFT, NO_SHIFT, IN[28], IN[29],
+lr_1b I200 ( OUT[28], net578, L_SHIFT, NO_SHIFT, net576, net574,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I202 ( OUT[25], IN[24], L_SHIFT, NO_SHIFT, IN[25], IN[26],
+lr_1b I202 ( OUT[25], net0514, L_SHIFT, NO_SHIFT, net566, net0518,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I203 ( OUT[26], IN[25], L_SHIFT, NO_SHIFT, IN[26], IN[27],
+lr_1b I203 ( OUT[26], net566, L_SHIFT, NO_SHIFT, net0518, net578,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I205 ( OUT[19], IN[18], L_SHIFT, NO_SHIFT, IN[19], IN[20],
+lr_1b I205 ( OUT[19], net0502, L_SHIFT, NO_SHIFT, net542, net0506,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I204 ( OUT[27], IN[26], L_SHIFT, NO_SHIFT, IN[27], IN[28],
+lr_1b I204 ( OUT[27], net0518, L_SHIFT, NO_SHIFT, net578, net576,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I206 ( OUT[18], IN[17], L_SHIFT, NO_SHIFT, IN[18], IN[19],
+lr_1b I206 ( OUT[18], net0500, L_SHIFT, NO_SHIFT, net0502, net542,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I207 ( OUT[17], IN[16], L_SHIFT, NO_SHIFT, IN[17], IN[18],
+lr_1b I207 ( OUT[17], net530, L_SHIFT, NO_SHIFT, net0500, net0502,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I209 ( OUT[20], IN[19], L_SHIFT, NO_SHIFT, IN[20], IN[21],
+lr_1b I209 ( OUT[20], net542, L_SHIFT, NO_SHIFT, net0506, net550,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I208 ( OUT[16], IN[15], L_SHIFT, NO_SHIFT, IN[16], IN[17],
+lr_1b I208 ( OUT[16], net0496, L_SHIFT, NO_SHIFT, net530, net0500,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I210 ( OUT[21], IN[20], L_SHIFT, NO_SHIFT, IN[21], IN[22],
+lr_1b I210 ( OUT[21], net0506, L_SHIFT, NO_SHIFT, net550, net554,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I211 ( OUT[22], IN[21], L_SHIFT, NO_SHIFT, IN[22], IN[23],
+lr_1b I211 ( OUT[22], net550, L_SHIFT, NO_SHIFT, net554, net558,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I213 ( OUT[7], IN[6], L_SHIFT, NO_SHIFT, IN[7], IN[8], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I212 ( OUT[23], IN[22], L_SHIFT, NO_SHIFT, IN[23], IN[24],
+lr_1b I213 ( OUT[7], net490, L_SHIFT, NO_SHIFT, net494, net498,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I215 ( OUT[5], IN[4], L_SHIFT, NO_SHIFT, IN[5], IN[6], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I214 ( OUT[6], IN[5], L_SHIFT, NO_SHIFT, IN[6], IN[7], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I217 ( OUT[0], 0, L_SHIFT, NO_SHIFT, IN[0], IN[1],
+lr_1b I212 ( OUT[23], net554, L_SHIFT, NO_SHIFT, net558, net0514,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I216 ( OUT[4], IN[3], L_SHIFT, NO_SHIFT, IN[4], IN[5], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I221 ( OUT[8], IN[7], L_SHIFT, NO_SHIFT, IN[8], IN[9], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I222 ( OUT[9], IN[8], L_SHIFT, NO_SHIFT, IN[9], IN[10], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I220 ( OUT[3], IN[2], L_SHIFT, NO_SHIFT, IN[3], IN[4], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I218 ( OUT[1], IN[0], L_SHIFT, NO_SHIFT, IN[1], IN[2], R_SHIFT,
-     LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I225 ( OUT[12], IN[11], L_SHIFT, NO_SHIFT, IN[12], IN[13],
+lr_1b I215 ( OUT[5], net482, L_SHIFT, NO_SHIFT, net486, net490,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I226 ( OUT[13], IN[12], L_SHIFT, NO_SHIFT, IN[13], IN[14],
+lr_1b I214 ( OUT[6], net486, L_SHIFT, NO_SHIFT, net490, net494,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I224 ( OUT[11], IN[10], L_SHIFT, NO_SHIFT, IN[11], IN[12],
+lr_1b I217 ( OUT[0], 0, L_SHIFT, NO_SHIFT, net0466,
+     net470, R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I216 ( OUT[4], net478, L_SHIFT, NO_SHIFT, net482, net486,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
-lr_1b I223 ( OUT[10], IN[9], L_SHIFT, NO_SHIFT, IN[10], IN[11],
+lr_1b I221 ( OUT[8], net494, L_SHIFT, NO_SHIFT, net498, net502,
      R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I222 ( OUT[9], net498, L_SHIFT, NO_SHIFT, net502, net0486,
+     R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I220 ( OUT[3], net0470, L_SHIFT, NO_SHIFT, net478, net482,
+     R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I218 ( OUT[1], net0466, L_SHIFT, NO_SHIFT, net470, net0470,
+     R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I225 ( OUT[12], net0488, L_SHIFT, NO_SHIFT, net514, net0492,
+     R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I226 ( OUT[13], net514, L_SHIFT, NO_SHIFT, net0492, net0494,
+     R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I224 ( OUT[11], net0486, L_SHIFT, NO_SHIFT, net0488, net514,
+     R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+lr_1b I223 ( OUT[10], net502, L_SHIFT, NO_SHIFT, net0486, net0488,
+     R_SHIFT, LEFT_NOT, OLD_NOT, RIGHT_NOT);
+inv_buffer I356 ( net0470, IN[2]);
+inv_buffer I357 ( net470, IN[1]);
+inv_buffer I345 ( net0492, IN[13]);
+inv_buffer I330 ( net0522, IN[31]);
+inv_buffer I329 ( net572, IN[30]);
+inv_buffer I328 ( net576, IN[28]);
+inv_buffer I331 ( net578, IN[27]);
+inv_buffer I332 ( net0518, IN[26]);
+inv_buffer I333 ( net566, IN[25]);
+inv_buffer I334 ( net0514, IN[24]);
+inv_buffer I335 ( net558, IN[23]);
+inv_buffer I336 ( net554, IN[22]);
+inv_buffer I337 ( net550, IN[21]);
+inv_buffer I338 ( net0506, IN[20]);
+inv_buffer I339 ( net542, IN[19]);
+inv_buffer I340 ( net0502, IN[18]);
+inv_buffer I341 ( net0500, IN[17]);
+inv_buffer I342 ( net530, IN[16]);
+inv_buffer I343 ( net0496, IN[15]);
+inv_buffer I344 ( net0494, IN[14]);
+inv_buffer I355 ( net478, IN[3]);
+inv_buffer I354 ( net482, IN[4]);
+inv_buffer I353 ( net486, IN[5]);
+inv_buffer I351 ( net494, IN[7]);
+inv_buffer I352 ( net490, IN[6]);
+inv_buffer I350 ( net498, IN[8]);
+inv_buffer I358 ( net0466, IN[0]);
+inv_buffer I349 ( net502, IN[9]);
+inv_buffer I348 ( net0486, IN[10]);
+inv_buffer I347 ( net0488, IN[11]);
+inv_buffer I327 ( net574, IN[29]);
+inv_buffer I346 ( net514, IN[12]);
 
 endmodule

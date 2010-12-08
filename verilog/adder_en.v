@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - adder_en, View - schematic
 // LAST TIME SAVED: Dec  7 22:30:24 2010
-// NETLIST TIME: Dec  7 22:30:46 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module adder_en ( Cout, Z, A, B, Cin, add_en, add_en_n );

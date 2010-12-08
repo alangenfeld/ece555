@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - Shifter_2_32, View - schematic
 // LAST TIME SAVED: Dec  4 16:56:10 2010
-// NETLIST TIME: Dec  7 19:22:18 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module Shifter_2_32 ( OUT, IN, LEFT_NOT, L_SHIFT, NO_SHIFT, OLD_NOT,

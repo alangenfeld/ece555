@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - multiplier_final, View - schematic
 // LAST TIME SAVED: Dec  5 17:14:43 2010
-// NETLIST TIME: Dec  7 19:22:18 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module multiplier_final ( A, B, Z, B_0, add_en, add_en_n, clk,

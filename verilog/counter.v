@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - counter, View - schematic
 // LAST TIME SAVED: Dec  3 18:48:56 2010
-// NETLIST TIME: Dec  7 19:22:19 2010
+// NETLIST TIME: Dec  8 03:20:48 2010
 `timescale 1ns / 1ns 
 
 module counter ( Q, clk, en );

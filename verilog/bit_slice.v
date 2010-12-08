@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - bit_slice, View - schematic
 // LAST TIME SAVED: Dec  5 16:19:44 2010
-// NETLIST TIME: Dec  7 19:22:18 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module bit_slice ( Cout, A, B, Z, B_0, Cin, add_en, add_en_n, clk,

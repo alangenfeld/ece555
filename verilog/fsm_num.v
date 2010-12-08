@@ -1,6 +1,6 @@
 // Library - ece555_final, Cell - fsm_num, View - schematic
 // LAST TIME SAVED: Dec  6 02:05:35 2010
-// NETLIST TIME: Dec  7 19:22:20 2010
+// NETLIST TIME: Dec  8 02:47:51 2010
 `timescale 1ns / 1ns 
 
 module fsm_num ( one, three, two, zero, cnt );
