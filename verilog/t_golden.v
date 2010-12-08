@@ -6,7 +6,7 @@ module t_golden();
    wire [31:0] a,b;
    reg start, clk, rst, drive;
    
-   golden1 DUT(.clk(clk), .rst(rst), .start(start), .Z(z),
+   top_view DUT(.clk(clk), .rst(rst), .start(start), .Z(z),
 	       .A(a), .B(b), .done(done));
    
 
