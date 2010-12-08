@@ -1,0 +1,183 @@
+@(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
+
+Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/s/srick/Desktop/ece555/ece555/LVS -l -s -t /filespace/people/s/srick/Desktop/ece555/ece555/LVS/layout /filespace/people/s/srick/Desktop/ece555/ece555/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /filespace/people/s/srick/Desktop/ece555/ece555/LVS/layout/netlist
+       count
+	418		nets
+	96		terminals
+	640		pmos
+	640		nmos
+
+    Net-list summary for /filespace/people/s/srick/Desktop/ece555/ece555/LVS/schematic/netlist
+       count
+	418		nets
+	98		terminals
+	640		pmos
+	640		nmos
+
+
+    Terminal correspondence points
+    N414      N26       B<0>
+    N364      N209      B<10>
+    N350      N75       B<11>
+    N341      N30       B<12>
+    N333      N224      B<13>
+    N415      N198      B<14>
+    N400      N215      B<15>
+    N391      N217      B<16>
+    N379      N62       B<17>
+    N370      N211      B<18>
+    N361      N220      B<19>
+    N399      N60       B<1>
+    N411      N204      B<20>
+    N397      N213      B<21>
+    N386      N205      B<22>
+    N377      N203      B<23>
+    N369      N214      B<24>
+    N356      N201      B<25>
+    N343      N212      B<26>
+    N335      N195      B<27>
+    N323      N223      B<28>
+    N404      N207      B<29>
+    N390      N59       B<2>
+    N366      N206      B<30>
+    N352      N219      B<31>
+    N378      N202      B<3>
+    N371      N196      B<4>
+    N360      N200      B<5>
+    N346      N199      B<6>
+    N337      N210      B<7>
+    N329      N197      B<8>
+    N412      N221      B<9>
+    N410      N107      LEFT_1
+    N396      N61       LEFT_16
+    N388      N64       LEFT_16_NOT
+    N374      N114      LEFT_1_NOT
+    N408      N106      LEFT_2
+    N394      N112      LEFT_2_NOT
+    N405      N72       LEFT_4
+    N348      N67       LEFT_4_NOT
+    N401      N68       LEFT_8
+    N347      N216      LEFT_8_NOT
+    N328      N113      NO_SHIFT_1
+    N367      N161      NO_SHIFT_16
+    N416      N110      NO_SHIFT_16_NOT
+    N353      N111      NO_SHIFT_1_NOT
+    N327      N109      NO_SHIFT_2
+    N376      N63       NO_SHIFT_2_NOT
+    N324      N186      NO_SHIFT_4
+    N331      N116      NO_SHIFT_4_NOT
+    N417      N79       NO_SHIFT_8
+    N330      N115      NO_SHIFT_8_NOT
+    N389      N104      RIGHT_1
+    N340      N77       RIGHT_16
+    N325      N66       RIGHT_16_NOT
+    N338      N162      RIGHT_1_NOT
+    N387      N108      RIGHT_2
+    N363      N118      RIGHT_2_NOT
+    N385      N65       RIGHT_4
+    N409      N117      RIGHT_4_NOT
+    N381      N222      RIGHT_8
+    N406      N225      RIGHT_8_NOT
+    N355      N102      Z<0>
+    N357      N80       Z<10>
+    N344      N8        Z<11>
+    N336      N6        Z<12>
+    N326      N99       Z<13>
+    N407      N84       Z<14>
+    N395      N81       Z<15>
+    N384      N12       Z<16>
+    N375      N7        Z<17>
+    N368      N10       Z<18>
+    N354      N9        Z<19>
+    N342      N101      Z<1>
+    N402      N92       Z<20>
+    N392      N93       Z<21>
+    N380      N87       Z<22>
+    N372      N13       Z<23>
+    N362      N82       Z<24>
+    N349      N95       Z<25>
+    N339      N97       Z<26>
+    N332      N89       Z<27>
+    N413      N98       Z<28>
+    N398      N94       Z<29>
+    N334      N100      Z<2>
+    N358      N96       Z<30>
+    N345      N11       Z<31>
+    N322      N90       Z<3>
+    N403      N85       Z<4>
+    N393      N14       Z<5>
+    N382      N86       Z<6>
+    N373      N91       Z<7>
+    N365      N83       Z<8>
+    N351      N88       Z<9>
+    N383      N71       shift_en
+    N359      N103      shift_en_not
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			1280	1280
+	total			1280	1280
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			418	418
+	total			418	418
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			96	98
+
+
+Probe files from /filespace/people/s/srick/Desktop/ece555/ece555/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /filespace/people/s/srick/Desktop/ece555/ece555/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
