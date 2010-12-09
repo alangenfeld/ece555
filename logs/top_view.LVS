@@ -1,0 +1,189 @@
+@(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
+
+Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/a/alangenf/ece555/LVS -l -s -t /filespace/people/a/alangenf/ece555/LVS/layout /filespace/people/a/alangenf/ece555/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /filespace/people/a/alangenf/ece555/LVS/layout/netlist
+       count
+	4447		nets
+	102		terminals
+	4780		pmos
+	4680		nmos
+
+    Net-list summary for /filespace/people/a/alangenf/ece555/LVS/schematic/netlist
+       count
+	4447		nets
+	102		terminals
+	4680		pmos
+	4680		nmos
+
+
+    Terminal correspondence points
+    N4391     N123      A<0>
+    N4363     N113      A<10>
+    N4350     N112      A<11>
+    N4443     N111      A<12>
+    N4430     N110      A<13>
+    N4421     N109      A<14>
+    N4411     N108      A<15>
+    N4401     N107      A<16>
+    N4387     N106      A<17>
+    N4373     N105      A<18>
+    N4360     N104      A<19>
+    N4376     N122      A<1>
+    N4418     N103      A<20>
+    N4408     N102      A<21>
+    N4398     N78       A<22>
+    N4382     N77       A<23>
+    N4369     N76       A<24>
+    N4356     N75       A<25>
+    N4345     N80       A<26>
+    N4435     N5        A<27>
+    N4425     N2        A<28>
+    N4415     N4        A<29>
+    N4364     N121      A<2>
+    N4366     N3        A<30>
+    N4353     N42       A<31>
+    N4351     N120      A<3>
+    N4442     N119      A<4>
+    N4429     N118      A<5>
+    N4420     N117      A<6>
+    N4410     N116      A<7>
+    N4400     N115      A<8>
+    N4385     N114      A<9>
+    N4445     N41       B<0>
+    N4395     N66       B<10>
+    N4379     N65       B<11>
+    N4367     N64       B<12>
+    N4354     N63       B<13>
+    N4446     N62       B<14>
+    N4433     N61       B<15>
+    N4422     N60       B<16>
+    N4412     N59       B<17>
+    N4403     N58       B<18>
+    N4390     N57       B<19>
+    N4432     N79       B<1>
+    N4441     N56       B<20>
+    N4428     N55       B<21>
+    N4419     N54       B<22>
+    N4409     N53       B<23>
+    N4399     N52       B<24>
+    N4384     N51       B<25>
+    N4371     N50       B<26>
+    N4358     N49       B<27>
+    N4347     N48       B<28>
+    N4437     N47       B<29>
+    N4423     N74       B<2>
+    N4396     N46       B<30>
+    N4380     N45       B<31>
+    N4413     N73       B<3>
+    N4402     N72       B<4>
+    N4389     N71       B<5>
+    N4375     N70       B<6>
+    N4361     N69       B<7>
+    N4349     N68       B<8>
+    N4440     N67       B<9>
+    N4383     N155      Z<0>
+    N4386     N145      Z<10>
+    N4372     N144      Z<11>
+    N4359     N143      Z<12>
+    N4348     N142      Z<13>
+    N4438     N141      Z<14>
+    N4427     N140      Z<15>
+    N4417     N139      Z<16>
+    N4407     N138      Z<17>
+    N4397     N137      Z<18>
+    N4381     N136      Z<19>
+    N4370     N154      Z<1>
+    N4434     N135      Z<20>
+    N4424     N43       Z<21>
+    N4414     N101      Z<22>
+    N4404     N133      Z<23>
+    N4393     N132      Z<24>
+    N4377     N131      Z<25>
+    N4365     N130      Z<26>
+    N4352     N134      Z<27>
+    N4444     N128      Z<28>
+    N4431     N127      Z<29>
+    N4357     N153      Z<2>
+    N4388     N126      Z<30>
+    N4374     N125      Z<31>
+    N4346     N152      Z<3>
+    N4436     N151      Z<4>
+    N4426     N150      Z<5>
+    N4416     N149      Z<6>
+    N4406     N148      Z<7>
+    N4394     N147      Z<8>
+    N4378     N146      Z<9>
+    N4405     N85       clk
+    N4362     N124      done
+    N4355     N0        gnd!
+    N4368     N84       rst
+    N4439     N10       start
+    N4392     N1        vdd!
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			9460	9360
+	total			9460	9360
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			4447	4447
+	total			4447	4447
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			102	102
+
+
+Probe files from /filespace/people/a/alangenf/ece555/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /filespace/people/a/alangenf/ece555/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

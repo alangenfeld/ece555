@@ -1,19 +1,19 @@
 @(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
 
-Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/s/srick/Desktop/ece555/ece555/LVS -l -s -t /filespace/people/s/srick/Desktop/ece555/ece555/LVS/layout /filespace/people/s/srick/Desktop/ece555/ece555/LVS/schematic
+Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/a/alangenf/ece555/LVS -l -s -t /filespace/people/a/alangenf/ece555/LVS/layout /filespace/people/a/alangenf/ece555/LVS/schematic
 Like matching is enabled.
 Net swapping is enabled.
 Using terminal names as correspondence points.
 Compiling Diva LVS rules...
 
-    Net-list summary for /filespace/people/s/srick/Desktop/ece555/ece555/LVS/layout/netlist
+    Net-list summary for /filespace/people/a/alangenf/ece555/LVS/layout/netlist
        count
 	22		nets
 	9		terminals
 	16		pmos
 	15		nmos
 
-    Net-list summary for /filespace/people/s/srick/Desktop/ece555/ece555/LVS/schematic/netlist
+    Net-list summary for /filespace/people/a/alangenf/ece555/LVS/schematic/netlist
        count
 	22		nets
 	9		terminals
@@ -62,7 +62,7 @@ The net-lists match.
 	total			9	9
 
 
-Probe files from /filespace/people/s/srick/Desktop/ece555/ece555/LVS/schematic
+Probe files from /filespace/people/a/alangenf/ece555/LVS/schematic
 
 devbad.out:
 
@@ -79,7 +79,7 @@ prunedev.out:
 audit.out:
 
 
-Probe files from /filespace/people/s/srick/Desktop/ece555/ece555/LVS/layout
+Probe files from /filespace/people/a/alangenf/ece555/LVS/layout
 
 devbad.out:
 
