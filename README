@@ -1,3 +1,39 @@
-pp_gen delay: 10.689n - 10.3n = .389ns
-adder delay: 18.748n - 10.3n = 8.448
-reg_file delay clk to bus: 11.854 - 11.55 = 1.304
+README
+------
+
+Delay
+-----
+Partial Product Generator delay:   10.689 ns - 10.300 ns = 0.389 ns
+Ripple Carry Adder delay:      	   18.748 ns - 10.300 ns = 8.448 ns
+Register File delay (clk to bus):  11.854 ns - 11.550 ns = 1.304 ns
+Shifter delay (B to Z):	    	   11.891 ns - 10.302 ns = 1.589 ns
+
+The critical path is through our carry lookahead adder. It starts at the transition in the state machine, moves to the read enable signal in the register file, and through the partial product generator.
+We choose our minimum clock cycle of 10 ns. We didn't have time to test many possible clocks, so we choose one slightly longer than the critical delay of the adder. 
+
+Area
+----
+240.75 um wide
+385.56 um tall
+92823.57 square um
+
+Design Considerations
+---------------------
+For the adder we implemented a ripple carry adder with a carry in of 1. We also put a counter in the control logic to implement our finite state machine.
+
+For the shifter we implemented a full logarithmic shifter. One design decision we made was to create the shifter's control signals in the FSM and route them to the shift by 1, 2, 4, 8, and 6 modules. The shifter input and output are doubly inverted to help drive the output on the Z bus. We also put a pass gate on the output which would allow the shift enable control signal to drive (or not drive) to the Z bus.
+
+To create the register file, we made a D flip-flop with an enable signal. We also made pass gates to be able to effectively drive bus A or bus B depending on the enable control signals.
+
+The control logic and counter are in the first row at the top of the layout. Directly below are is another row of control logic. The top row of the control logic is the state, and the bottom row of the control logic is made up of control signal outputs. Below the control logic is (from left to right) the adder, register file, partial product generator, and shifter.
+
+To create the state machine, the output of the state machine control signals are driven by eight times larger not gates to help speed drive the output lines.
+
+Files
+-----
+logs		the results from our DRC and LVS runs
+delay		the screenshots from our spectre delay simulations
+ece555_final	the cadence library for our final project
+stimfiles	folder which holds our spectre stimulus files for calculating delay and displaying our multiplier correctness
+verilog		our verilog netlists and testbenches
+verification	screenshots from spectre and verilog verification

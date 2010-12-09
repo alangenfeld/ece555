@@ -3,12 +3,12 @@
 // NETLIST TIME: Dec  8 21:42:29 2010
 `timescale 1ns / 1ns 
 
-module top_view ( A, B, done, Z, clk, rst, start );
+module top_view ( A, B, done, Z, clk, rst_n, start );
 
 output  done;
 
 
-input  clk, rst, start;
+input  clk, rst_n, start;
 
 output [31:0]  A;
 output [31:0]  B;
@@ -62,6 +62,6 @@ control I33 ( B_zero, add_en, add_en_n, done, left1, left1_n, left2,
      rd_enB[1], rd_enB[3], rd_enB_n[0], rd_enB_n[1], rd_enB_n[3],
      right1, right1_n, right2, right2_n, right4, right4_n, right8,
      right8_n, right16, right16_n, shift_en, shift_en_n, wr_en[4:0],
-     A[0], A[1], A[2], A[3], A[4], B[0], clk, rst, start);
+     A[0], A[1], A[2], A[3], A[4], B[0], clk, rst_n, start);
 
 endmodule
