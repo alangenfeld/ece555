@@ -28,10 +28,10 @@ end
       // cycle 1
       start = 1;
       drive = 1;
-      drv_z = 32'h0000_7FFF; // multiplicand
+      drv_z = 32'h0000_0F0F; // multiplicand
       // cycle 2
       @(posedge clk);
-      #1 drv_z = 32'h0000_0002; // multiplier
+      #1 drv_z = 32'h0000_F0F0; // multiplier
       start = 0;
       // cycle 3
       @(posedge clk);
