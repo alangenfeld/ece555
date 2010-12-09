@@ -1,8 +1,11 @@
+vDD vdd! 0 dc 1.8
+vGND gnd! 0 dc 0
+
 vclk clk 0 pulse 0 1.8 0n 0.1n 0.1n 5n 10n
-vrst_n rst_n 0 pwl 0n 1.8 25n 1.8 26n 0
+vrst_n rst_n 0 pwl 0n 0 25n 0 26n 1.8
 vstart start 0 pwl 0n 0 30n 0 31n 1.8 40n 1.8 41n 0
-//vdrive_Z drive_Z 0 pwl 30ns 0 31ns 1.8 70n 1.8 71n 0
-//vdrive_Z_n drive_Z_n 0 pwl 30ns 1.8 31ns 0 70n 0 71n 1.8
+vdrive_Z drive_Z 0 pwl 30ns 0 31ns 1.8 70n 1.8 71n 0
+vdrive_Z_n drive_Z_n 0 pwl 30ns 1.8 31ns 0 70n 0 71n 1.8
 
 vZ<0> Z<0> 0 pwl 30n 0 31n 0 40n 0 41n 1.8 50n 1.8 51n 0 60n 0 61n 1.8
 vZ<1> Z<1> 0 pwl 30n 0 31n 0 40n 1.8 41n 0 50n 0 51n 0 60n 0 61n 0

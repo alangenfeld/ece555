@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<setupdb>data
+	<active>Active Setup
+		<tests>
+			<test>ece555_final:test_top:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>test_top</value>
+					</option>
+					<option>lib
+						<value>ece555_final</value>
+					</option>
+					<option>sim
+						<value>hspiceD</value>
+					</option>
+					<option>view
+						<value>extracted</value>
+					</option>
+				</tooloptions>
+			</test>
+		</tests>
+	</active>
+	<history>History</history>
+</setupdb>
