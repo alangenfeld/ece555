@@ -13,4 +13,4 @@ AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
 FilePathUsedToEditLock         /filespace/people/a/alangenf/ece555/ece555_final/top_view/extracted/layout.oa.cdslck
-TimeEditLocked                 Wed Dec  8 18:02:16 2010 CST
+TimeEditLocked                 Wed Dec  8 19:15:15 2010 CST
