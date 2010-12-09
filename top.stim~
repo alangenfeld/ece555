@@ -1,0 +1,38 @@
+vclk clk 0 pulse 0 1.8 0n 0.1n 0.1n 5n 10n
+vrst rst 0 pwl 0n 1.8 25n 1.8 26n 0
+vstart start 0 pwl 0n 0 30n 0 31n 1.8 40n 1.8 41n 0
+//vdrive_Z drive_Z 0 pwl 30ns 0 31ns 1.8 70n 1.8 71n 0
+//vdrive_Z_n drive_Z_n 1.8 pwl 30ns 1.8 31ns 0 70n 0 71n 1.8
+
+//vZ<0> Z<0> 0 pwl 30n 0 31n 0 40n 0 41n 1.8 50n 1.8 51n 0 60n 0 61n 1.8
+//vZ<1> Z<1> 0 pwl 30n 0 31n 1.8 40n 1.8 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<2> Z<2> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<3> Z<3> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<4> Z<4> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<5> Z<5> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<6> Z<6> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<7> Z<7> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<8> Z<8> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<9> Z<9> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<10> Z<10> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<11> Z<11> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<12> Z<12> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<13> Z<13> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<14> Z<14> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<15> Z<15> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<16> Z<16> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<17> Z<17> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<18> Z<18> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<19> Z<19> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<20> Z<20> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<21> Z<21> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<22> Z<22> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<23> Z<23> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<24> Z<24> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<25> Z<25> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<26> Z<26> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<27> Z<27> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<28> Z<28> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<29> Z<29> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<30> Z<30> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
+//vZ<31> Z<31> 0 pwl 30n 0 31n 0 40n 0 41n 0 50n 0 51n 0 60n 0 61n 0
