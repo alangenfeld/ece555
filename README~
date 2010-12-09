@@ -1,0 +1,3 @@
+pp_gen delay: 10.689n - 10.3n = .389ns
+adder delay: 18.748n - 10.3n = 8.448
+reg_file delay:

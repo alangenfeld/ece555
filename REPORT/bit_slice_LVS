@@ -1,0 +1,123 @@
+@(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
+
+Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/j/jnystrom/ece555/LVS -l -s -t /filespace/people/j/jnystrom/ece555/LVS/layout /filespace/people/j/jnystrom/ece555/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/layout/netlist
+       count
+	150		nets
+	36		terminals
+	115		pmos
+	114		nmos
+
+    Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/schematic/netlist
+       count
+	150		nets
+	38		terminals
+	114		pmos
+	114		nmos
+
+
+    Terminal correspondence points
+    N126      N15       A
+    N125      N3        B
+    N147      N24       B_0
+    N138      N9        Cin
+    N144      N27       Cout
+    N120      N8        Z
+    N123      N14       add_en
+    N121      N28       add_en_n
+    N130      N23       clk
+    N128      N31       ppgen_en
+    N142      N19       ppgen_en_n
+    N129      N22       rd_enA<0>
+    N124      N17       rd_enA<1>
+    N122      N6        rd_enA<2>
+    N119      N32       rd_enA<3>
+    N116      N12       rd_enA<4>
+    N146      N18       rd_enA_n<0>
+    N140      N13       rd_enA_n<1>
+    N135      N26       rd_enA_n<2>
+    N131      N4        rd_enA_n<3>
+    N127      N16       rd_enA_n<4>
+    N117      N20       rd_enB<0>
+    N149      N37       rd_enB<1>
+    N143      N29       rd_enB<2>
+    N137      N25       rd_enB<3>
+    N133      N11       rd_enB<4>
+    N118      N5        rd_enB_n<0>
+    N114      N2        rd_enB_n<1>
+    N145      N21       rd_enB_n<2>
+    N139      N34       rd_enB_n<3>
+    N134      N30       rd_enB_n<4>
+    N115      N10       wr_en<0>
+    N148      N36       wr_en<1>
+    N141      N33       wr_en<2>
+    N136      N7        wr_en<3>
+    N132      N35       wr_en<4>
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			229	228
+	total			229	228
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			150	150
+	total			150	150
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			36	38
+
+
+Probe files from /filespace/people/j/jnystrom/ece555/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /filespace/people/j/jnystrom/ece555/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

@@ -1,0 +1,44 @@
+vDD vdd! 0 dc 1.8
+vGND gnd! 0 dc 0
+
+vCLK clk 0 pulse 0 1.8 0.5n 0.1n 0.1n 0.5n 1n
+
+//vD D 0 pwl 10.18n 0 10.2n 0.05 10.25n 0.45 10.3n 0.899 10.35n 1.384 10.4n 1.75 10.42n 1.8
+vB_0 B_0 0 dc 1.8
+vadd_en add_en 0 dc 0
+vadd_en_n add_en_n 0 dc 1.8 
+vppgen_en ppgen_en 0 dc 1.8
+vppgen_en_n ppgen_en_n 0 dc 0
+
+//vrd_enA<0> rd_enA<0> 0 dc 0 
+//vrd_enA<1> rd_enA<1> 0 dc 0
+//vrd_enA<2> rd_enA<2> 0 dc 0
+//vrd_enA<3> rd_enA<3> 0 dc 0
+//vrd_enA<4> rd_enA<4> 0 dc 0
+
+//vrd_enA_n<0> rd_enA_n<0> 0 dc 1.8
+//vrd_enA_n<1> rd_enA_n<1> 0 dc 1.8
+//vrd_enA_n<2> rd_enA_n<2> 0 dc 1.8
+//vrd_enA_n<3> rd_enA_n<3> 0 dc 1.8
+//vrd_enA_n<4> rd_enA_n<4> 0 dc 1.8
+
+//vrd_enB<0> rd_enB<0> 0 dc 0
+//vrd_enB<1> rd_enB<1> 0 dc 0
+//vrd_enB<2> rd_enB<2> 0 dc 0
+//vrd_enB<3> rd_enB<3> 0 dc 0
+//vrd_enB<4> rd_enB<4> 0 dc 0
+
+//vrd_enB_n<0> rd_enB_n<0> 0 dc 1.8
+//vrd_enB_n<1> rd_enB_n<1> 0 dc 1.8
+//vrd_enB_n<2> rd_enB_n<2> 0 dc 1.8
+//vrd_enB_n<3> rd_enB_n<3> 0 dc 1.8
+//vrd_enB_n<4> rd_enB_n<4> 0 dc 1.8
+
+//vwr_en<0> wr_en<0> 0 dc 0
+//vwr_en<1> wr_en<1> 0 dc 0
+//vwr_en<2> wr_en<2> 0 dc 0
+//vwr_en<3> wr_en<3> 0 dc 0
+//vwr_en<4> wr_en<4> 0 dc 0
+
+vA<0> A<0> 0 dc pwl 10.18n 0 10.2n 0.05 10.25n 0.45 10.3n 0.899 10.35n 1.384 10.4n 1.75 10.42n 1.8
+vB<0> B<0> 0 dc 1.8

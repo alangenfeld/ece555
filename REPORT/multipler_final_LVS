@@ -1,0 +1,217 @@
+@(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
+
+Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/j/jnystrom/ece555/LVS -l -s -t /filespace/people/j/jnystrom/ece555/LVS/layout /filespace/people/j/jnystrom/ece555/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/layout/netlist
+       count
+	3745		nets
+	129		terminals
+	3680		pmos
+	3648		nmos
+
+    Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/schematic/netlist
+       count
+	3745		nets
+	129		terminals
+	3648		pmos
+	3648		nmos
+
+
+    Terminal correspondence points
+    N3671     N74       A<0>
+    N3639     N19       A<10>
+    N3625     N20       A<11>
+    N3741     N21       A<12>
+    N3724     N22       A<13>
+    N3710     N23       A<14>
+    N3696     N24       A<15>
+    N3682     N25       A<16>
+    N3665     N26       A<17>
+    N3649     N27       A<18>
+    N3636     N28       A<19>
+    N3654     N10       A<1>
+    N3705     N29       A<20>
+    N3691     N30       A<21>
+    N3678     N31       A<22>
+    N3660     N32       A<23>
+    N3645     N33       A<24>
+    N3631     N34       A<25>
+    N3616     N35       A<26>
+    N3729     N36       A<27>
+    N3714     N37       A<28>
+    N3700     N38       A<29>
+    N3640     N11       A<2>
+    N3642     N39       A<30>
+    N3628     N40       A<31>
+    N3626     N12       A<3>
+    N3740     N13       A<4>
+    N3723     N14       A<5>
+    N3709     N15       A<6>
+    N3695     N16       A<7>
+    N3681     N17       A<8>
+    N3663     N18       A<9>
+    N3743     N43       B<0>
+    N3674     N53       B<10>
+    N3657     N54       B<11>
+    N3644     N55       B<12>
+    N3629     N56       B<13>
+    N3744     N42       B<14>
+    N3727     N57       B<15>
+    N3711     N58       B<16>
+    N3697     N59       B<17>
+    N3685     N60       B<18>
+    N3669     N61       B<19>
+    N3726     N44       B<1>
+    N3738     N62       B<20>
+    N3721     N63       B<21>
+    N3707     N64       B<22>
+    N3693     N65       B<23>
+    N3680     N66       B<24>
+    N3662     N67       B<25>
+    N3647     N68       B<26>
+    N3634     N69       B<27>
+    N3619     N70       B<28>
+    N3733     N71       B<29>
+    N3712     N45       B<2>
+    N3676     N72       B<30>
+    N3658     N73       B<31>
+    N3698     N46       B<3>
+    N3684     N47       B<4>
+    N3668     N48       B<5>
+    N3652     N49       B<6>
+    N3638     N50       B<7>
+    N3623     N51       B<8>
+    N3737     N52       B<9>
+    N3734     N41       B_0
+    N3661     N107      Z<0>
+    N3664     N117      Z<10>
+    N3648     N118      Z<11>
+    N3635     N119      Z<12>
+    N3620     N120      Z<13>
+    N3735     N121      Z<14>
+    N3718     N122      Z<15>
+    N3704     N123      Z<16>
+    N3690     N106      Z<17>
+    N3677     N124      Z<18>
+    N3659     N125      Z<19>
+    N3646     N108      Z<1>
+    N3728     N126      Z<20>
+    N3713     N127      Z<21>
+    N3699     N128      Z<22>
+    N3686     N129      Z<23>
+    N3672     N130      Z<24>
+    N3655     N131      Z<25>
+    N3641     N132      Z<26>
+    N3627     N133      Z<27>
+    N3742     N134      Z<28>
+    N3725     N135      Z<29>
+    N3633     N109      Z<2>
+    N3667     N136      Z<30>
+    N3651     N160      Z<31>
+    N3618     N110      Z<3>
+    N3731     N111      Z<4>
+    N3716     N112      Z<5>
+    N3702     N113      Z<6>
+    N3688     N114      Z<7>
+    N3673     N115      Z<8>
+    N3656     N116      Z<9>
+    N3653     N5        add_en
+    N3643     N6        add_en_n
+    N3687     N7        clk
+    N3630     N0        gnd!
+    N3679     N8        ppgen_en
+    N3720     N9        ppgen_en_n
+    N3683     N81       rd_enA<0>
+    N3666     N80       rd_enA<1>
+    N3650     N79       rd_enA<2>
+    N3637     N78       rd_enA<3>
+    N3622     N77       rd_enA<4>
+    N3732     N86       rd_enA_n<0>
+    N3717     N85       rd_enA_n<1>
+    N3703     N84       rd_enA_n<2>
+    N3689     N83       rd_enA_n<3>
+    N3675     N82       rd_enA_n<4>
+    N3624     N91       rd_enB<0>
+    N3739     N90       rd_enB<1>
+    N3722     N89       rd_enB<2>
+    N3708     N88       rd_enB<3>
+    N3694     N87       rd_enB<4>
+    N3632     N96       rd_enB_n<0>
+    N3617     N95       rd_enB_n<1>
+    N3730     N94       rd_enB_n<2>
+    N3715     N93       rd_enB_n<3>
+    N3701     N92       rd_enB_n<4>
+    N3670     N1        vdd!
+    N3621     N4        wr_en<0>
+    N3736     N3        wr_en<1>
+    N3719     N2        wr_en<2>
+    N3706     N98       wr_en<3>
+    N3692     N97       wr_en<4>
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			7328	7296
+	total			7328	7296
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			3745	3745
+	total			3745	3745
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			129	129
+
+
+Probe files from /filespace/people/j/jnystrom/ece555/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /filespace/people/j/jnystrom/ece555/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+

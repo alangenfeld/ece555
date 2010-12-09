@@ -1,0 +1,98 @@
+@(#)$CDS: LVS.exe version 6.1.1 01/18/2007 15:13 (cds126047) $
+
+Command line: /afs/engr.wisc.edu/apps/cadence-2008/IC-6.1.1/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /filespace/people/j/jnystrom/ece555/LVS -l -s -t /filespace/people/j/jnystrom/ece555/LVS/layout /filespace/people/j/jnystrom/ece555/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/layout/netlist
+       count
+	30		nets
+	11		terminals
+	19		pmos
+	19		nmos
+
+    Net-list summary for /filespace/people/j/jnystrom/ece555/LVS/schematic/netlist
+       count
+	30		nets
+	11		terminals
+	19		pmos
+	19		nmos
+
+
+    Terminal correspondence points
+    N24       N5        A
+    N23       N11       B
+    N21       N3        Z
+    N27       N15       clk
+    N20       N0        gnd!
+    N29       N4        rd_enA
+    N26       N14       rd_enA_n
+    N28       N12       rd_enB
+    N19       N9        rd_enB_n
+    N25       N1        vdd!
+    N22       N16       wr_en
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			38	38
+	total			38	38
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			30	30
+	total			30	30
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			11	11
+
+
+Probe files from /filespace/people/j/jnystrom/ece555/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /filespace/people/j/jnystrom/ece555/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
