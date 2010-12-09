@@ -5,12 +5,12 @@
 #
 LockStakeVersion               1.1
 LoginName                      jnystrom
-HostName                       tux-35.cae.wisc.edu
-ProcessIdentifier              28934
+HostName                       tux-43.cae.wisc.edu
+ProcessIdentifier              9286
 ProcessCreationTime_UTC        0
 ProcessCreationTime_Readable   Wed Dec 31 18:00:00 1969 CST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
 FilePathUsedToEditLock         /filespace/people/j/jnystrom/ece555/ece555_final/multiplier_final_test/extracted/layout.oa.cdslck.dirlck
-TimeEditLocked                 Wed Dec  8 23:27:38 2010 CST
+TimeEditLocked                 Thu Dec  9 01:24:10 2010 CST
